@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Felix Territory</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Arial,sans-serif;background:#f4f5f7;color:#172033}
+header{background:#101828;color:#fff;padding:14px 16px}
+.title{font-size:21px;font-weight:800}.sub{font-size:12px;opacity:.78;margin-top:3px}
+.app{height:calc(100vh - 73px);display:flex}
+.side{width:350px;background:#fff;overflow:auto;padding:12px;border-right:1px solid #ddd;z-index:1000}
+.mapwrap{flex:1;min-width:0;position:relative}
+#map{position:absolute;inset:0}
+.card{background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:12px;margin-bottom:10px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{color:#fff;border-radius:12px;padding:10px}
+.stat b{font-size:28px;display:block}.blue{background:#1683e8}.red{background:#e05252}
+h2{font-size:14px;margin:0 0 9px}
+input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px;font-size:15px;margin-bottom:8px;background:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}
+.zip{padding:8px 2px;border-radius:8px;border:1px solid #d8dde3;font-size:11px;font-weight:700;background:#f8fafc}
+.zip.fz{background:#eef7ff;border-color:#a8d0f5}.zip.hz{background:#fff1f1;border-color:#efadad}.zip.on{outline:3px solid #111827}
+.big{font-size:21px;font-weight:800}.small{font-size:12px;color:#667085;line-height:1.4}
+.action{display:block;background:#111827;color:#fff;text-decoration:none;text-align:center;padding:11px;border-radius:10px;margin-top:8px;font-weight:700}
+.bizgrid{display:grid;grid-template-columns:1fr 1fr;gap:6px}.biz{padding:9px 4px;border:1px solid #ddd;border-radius:9px;background:#fff;font-weight:700;font-size:11px}
+.legend{display:flex;gap:12px;font-size:12px;margin-top:5px}.dot{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:4px}
+.leaflet-control-zoom a{width:44px!important;height:44px!important;line-height:44px!important;font-size:24px!important}
+.ziplabel{background:rgba(255,255,255,.88);border:0;border-radius:4px;padding:1px 3px;font-weight:800;font-size:10px;color:#111827;box-shadow:0 1px 3px rgba(0,0,0,.25)}
+@media(max-width:760px){
+ .app{height:auto;min-height:calc(100vh - 73px);display:flex;flex-direction:column}
+ .mapwrap{height:53vh;min-height:390px;order:1}
+ .side{width:100%;height:auto;order:2;border-right:0}
+ .grid{grid-template-columns:repeat(5,1fr)}
+}
+
+.topnav{display:flex;gap:8px;margin-top:12px;overflow:auto}
+.topbtn{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.10);color:#fff;border-radius:10px;padding:9px 12px;font-weight:800;white-space:nowrap;cursor:pointer}
+.topbtn.active{background:#fff;color:#101828}
+#leadsPanel{display:none;height:calc(100vh - 105px);overflow:auto;background:#f4f5f7}
+.leadsWrap{max-width:1100px;margin:auto;padding:14px}
+.leadStats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px}
+.leadStat{background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:12px;text-align:center}
+.leadStat b{display:block;font-size:24px}.leadStat span{font-size:12px;color:#667085}
+.leadControls{background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:12px;margin-bottom:12px}
+.leadSearch{width:100%;padding:12px;border:1px solid #cfd5dc;border-radius:10px;font-size:15px}
+.leadBtns{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+.leadBtn{padding:8px 10px;border:1px solid #d8dde3;border-radius:9px;background:#fff;color:#172033;font-weight:700;font-size:12px;text-decoration:none}
+.leadBtn.active{background:#111827;color:#fff;border-color:#111827}
+#leadMap{height:390px;border-radius:14px;overflow:hidden;margin-bottom:10px}
+.leadList{display:grid;gap:10px}
+.leadCard{background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:13px}
+.leadTop{display:flex;justify-content:space-between;gap:8px}.leadName{font-size:16px;font-weight:800}
+.leadBadge{font-size:11px;color:#fff;border-radius:999px;padding:5px 8px;white-space:nowrap;height:max-content}
+.leadFelix{background:#1683e8}.leadHesham{background:#e05252}
+.leadAddr{margin-top:7px;line-height:1.4}.leadMeta{font-size:12px;color:#667085;margin-top:7px}
+.leadActions{display:flex;gap:7px;margin-top:10px}.leadActions a{flex:1;text-align:center;text-decoration:none;padding:9px;border-radius:9px;font-size:12px;font-weight:800}
+.appleLead{background:#eef7ff;color:#1769df}.googleLead{background:#f1f3f5;color:#202733}
+.leadNote{font-size:11px;color:#667085;margin:8px 2px 12px;line-height:1.45}
+@media(max-width:760px){#leadsPanel{height:auto;min-height:calc(100vh - 105px)}#leadMap{height:48vh;min-height:360px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="title">Felix Territory</div>
+  <div class="sub">Accurate 2020 Census ZIP boundaries • OpenStreetMap • no Apple developer account required</div>
+  <div class="topnav">
+    <button id="tabTerritory" class="topbtn active" onclick="showTab('territory')">🗺️ Territory Map</button>
+    <button id="tabLeads" class="topbtn" onclick="showTab('leads')">🆕 New Business Leads <span id="leadCount">45</span></button>
+  </div>
+</header>
+
+<div class="app">
+<section class="side">
+  <div class="card stats">
+    <div class="stat blue"><span>Felix Territory</span><b>46</b> ZIPs</div>
+    <div class="stat red"><span>Hesham</span><b>31</b> ZIPs</div>
+  </div>
+
+  <div class="card">
+    <h2>Find a ZIP</h2>
+    <input id="q" inputmode="numeric" placeholder="Type ZIP, e.g. 93602">
+    <select id="f">
+      <option value="all">All ZIPs</option>
+      <option value="felix">Felix Territory</option>
+      <option value="hesham">Hesham</option>
+    </select>
+    <div id="grid" class="grid"></div>
+    <div class="legend">
+      <span><i class="dot" style="background:#1683e8"></i>Felix</span>
+      <span><i class="dot" style="background:#e05252"></i>Hesham</span>
+    </div>
+  </div>
+
+  <div class="card" id="info">
+    <div class="big">Select a ZIP</div>
+    <div class="small">Tap a colored ZIP area or a ZIP button.</div>
+  </div>
+
+  <div class="card">
+    <h2>Business searches</h2>
+    <div id="biz" class="bizgrid"></div>
+    <div class="small" style="margin-top:7px">Opens the selected ZIP search in Apple Maps.</div>
+  </div>
+
+  <div class="small">
+    ZIP areas use 2020 Census ZCTAs. They are geographic approximations of USPS ZIP areas, not official USPS delivery-route boundaries.
+  </div>
+</section>
+
+<main class="mapwrap"><div id="map"></div></main>
+</div>
+
+
+<section id="leadsPanel">
+  <div class="leadsWrap">
+    <div class="leadStats">
+      <div class="leadStat"><b id="leadTotal">45</b><span>Matching businesses</span></div>
+      <div class="leadStat"><b id="leadFelix">18</b><span>🔵 Felix</span></div>
+      <div class="leadStat"><b id="leadHesham">27</b><span>🔴 Hesham</span></div>
+    </div>
+    <div class="leadControls">
+      <input id="leadSearch" class="leadSearch" placeholder="Search business, address, ZIP, or category…">
+      <div class="leadBtns">
+        <button class="leadBtn active" data-lead-ter="All">All</button>
+        <button class="leadBtn" data-lead-ter="Felix">🔵 Felix</button>
+        <button class="leadBtn" data-lead-ter="Hesham">🔴 Hesham</button>
+      </div>
+      <div class="leadBtns">
+        <button class="leadBtn active" data-lead-days="0">All dates</button>
+        <button class="leadBtn" data-lead-days="7">7 days</button>
+        <button class="leadBtn" data-lead-days="30">30 days</button>
+        <button class="leadBtn" data-lead-days="90">90 days</button>
+        <a class="leadBtn" href="https://www.fresno.gov/finance/business-license-and-tax-certificate/new-business-license-report/" target="_blank" rel="noopener">Official Fresno report ↗</a>
+      </div>
+    </div>
+    <div id="leadMap"></div>
+    <div class="leadNote">📍 Pins are placed at the approximate ZIP-area center because the City export does not provide latitude/longitude. Apple Maps and Google Maps use the business's full address for the exact location.</div>
+    <div id="leadList" class="leadList"></div>
+    <div class="leadNote">Source: City of Fresno New Business License Report • September 2026 export • matched against the assigned Felix/Hesham ZIP lists.</div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const FELIX=['93202', '93204', '93230', '93234', '93239', '93242', '93245', '93266', '93277', '93291', '93529', '93608', '93609', '93610', '93614', '93616', '93620', '93622', '93624', '93625', '93627', '93630', '93631', '93636', '93637', '93638', '93640', '93648', '93652', '93656', '93660', '93662', '93666', '93668', '93673', '93701', '93702', '93704', '93705', '93706', '93721', '93723', '93725', '93728', '95223', '95311'];
+const HESHAM=['93262', '93602', '93603', '93611', '93612', '93615', '93618', '93619', '93621', '93626', '93628', '93633', '93641', '93643', '93644', '93646', '93647', '93650', '93651', '93654', '93657', '93667', '93675', '93703', '93710', '93711', '93720', '93722', '93726', '93727', '93730'];
+const ALL=[...FELIX,...HESHAM];
+const terr={}; FELIX.forEach(z=>terr[z]='felix'); HESHAM.forEach(z=>terr[z]='hesham');
+const cats=["Restaurants & Food","Construction","Automotive","Healthcare","Professional Services","Retail","Manufacturing","Agriculture","Transportation","Hospitality","Personal Services","Wholesale","Finance","Technology","Education"];
+
+const map=L.map('map',{zoomControl:true,preferCanvas:true}).setView([36.55,-119.65],9);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+  maxZoom:19,attribution:'&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+const layers={}, labels={}, features={};
+let selected=null, allBounds=null;
+
+function styleFor(z){
+  const isF=terr[z]==='felix';
+  return {
+    color:isF?'#0b63c7':'#b92727',
+    weight:selected===z?4:1.5,
+    opacity:1,
+    fillColor:isF?'#1683e8':'#e05252',
+    fillOpacity:selected===z?.68:.40
+  };
+}
+
+function centroid(feature){
+  const g=feature.geometry;
+  let pts=[];
+  if(g.type==='Polygon') pts=g.coordinates[0];
+  else if(g.type==='MultiPolygon') pts=g.coordinates[0][0];
+  if(!pts.length) return null;
+  let sx=0,sy=0;
+  pts.forEach(p=>{sx+=p[0];sy+=p[1]});
+  return [sy/pts.length,sx/pts.length];
+}
+
+function addFeature(f){
+  const z=String(f.properties.ZCTA5CE20).padStart(5,'0');
+  if(!terr[z]) return;
+  features[z]=f;
+  const layer=L.geoJSON(f,{style:()=>styleFor(z)});
+  layer.eachLayer(l=>{
+    l.on('click',()=>selectZip(z));
+    l.bindTooltip(z,{sticky:true,direction:'center',className:'ziplabel'});
+  });
+  layer.addTo(map);
+  layers[z]=layer;
+}
+
+function refreshStyles(){
+  Object.keys(layers).forEach(z=>layers[z].setStyle(styleFor(z)));
+}
+
+function buttons(){
+  const q=document.getElementById('q').value.trim();
+  const f=document.getElementById('f').value;
+  const g=document.getElementById('grid'); g.innerHTML='';
+  ALL.filter(z=>(f==='all'||terr[z]===f)&&(!q||z.includes(q))).sort().forEach(z=>{
+    const b=document.createElement('button');
+    b.className='zip '+(terr[z]==='felix'?'fz':'hz')+(z===selected?' on':'');
+    b.textContent=z; b.onclick=()=>selectZip(z); g.appendChild(b);
+  });
+}
+document.getElementById('q').oninput=buttons;
+document.getElementById('f').onchange=buttons;
+
+function selectZip(z){
+  selected=z; buttons(); refreshStyles();
+  const tr=terr[z]==='felix'?'Felix Territory':'Hesham';
+  document.getElementById('info').innerHTML=
+    `<div class="big">${z}</div><p><b>${tr}</b></p>
+     <div class="small">This is the actual 2020 Census ZCTA polygon for ${z}. Use a category below to find prospects.</div>
+     <a class="action" target="_blank" rel="noopener" href="https://maps.apple.com/?q=${encodeURIComponent(z+' California')}">Open ${z} in Apple Maps</a>`;
+  if(layers[z]){
+    const b=layers[z].getBounds();
+    map.fitBounds(b,{padding:[35,35],maxZoom:12});
+  }
+}
+
+document.getElementById('biz').innerHTML=cats.map(c=>`<button class="biz" onclick="biz('${c.replace(/'/g,"\\'")}')">${c}</button>`).join('');
+function biz(c){
+  if(!selected){alert('Select a ZIP first.');return}
+  window.open('https://maps.apple.com/?q='+encodeURIComponent(c+' businesses '+selected+', California'),'_blank');
+}
+
+async function load(){
+  const where=ALL.map(z=>`'${z}'`).join(',');
+  const u='https://services2.arcgis.com/6Miy5NqQWjMYTGFY/ArcGIS/rest/services/tl_2020_us_zcta520/FeatureServer/0/query?where='+
+    encodeURIComponent('ZCTA5CE20 IN ('+where+')')+
+    '&outFields=ZCTA5CE20&returnGeometry=true&outSR=4326&f=geojson';
+
+  try{
+    const r=await fetch(u);
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const j=await r.json();
+    j.features.forEach(addFeature);
+
+    const bounds=L.latLngBounds([]);
+    Object.values(layers).forEach(l=>bounds.extend(l.getBounds()));
+    allBounds=bounds;
+    if(bounds.isValid()) map.fitBounds(bounds,{padding:[20,20]});
+
+    document.querySelector('.sub').textContent=`77 real ZIP boundaries • tap any ZIP to zoom • free OpenStreetMap background`;
+    buttons();
+  }catch(e){
+    document.querySelector('.sub').textContent='Could not load ZIP boundaries. Refresh the page and try again.';
+    console.error(e);
+  }
+}
+
+buttons();
+load();
+
+const VERIFIED_LEADS=[{"account_key":"470697","name":"AMOR MOBILE BARTENDING","address":"6843 N HIGHLAND AVE","address2":"CLOVIS CA 93619-9092","business_type":"Service Specialty; Unclass.","contact":"ANGELICA LOPEZ","phone":"","start":"2026-09-05","expire":"2026-09-30","status":"Licensed","zip":"93619","territory":"Hesham"},{"account_key":"470538","name":"BEAUTIFULLY RESTORED","address":"7335 N 1ST ST STE 102","address2":"FRESNO CA 93720-2968","business_type":"Tattoo Parlour","contact":"ROSAELENA ROJAS","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93720","territory":"Hesham"},{"account_key":"470441","name":"BRICK 3001 LLC","address":"7089 N MARKS AVE STE 106","address2":"FRESNO CA 93711-0267","business_type":"Retail Artgoods / Hobbycraft / Toys","contact":"NICHOLS M BOGANWRIGHT","phone":"(085)952-1152","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93711","territory":"Hesham"},{"account_key":"470691","name":"CONSUMER CELLULAR, INCORPORATED","address":"3099 W SHAW AVE STE 101","address2":"FRESNO CA 93711-3209","business_type":"Cellular Phone Service","contact":"BOBBIE REYES","phone":"(602)229-6312","start":"2026-09-24","expire":"2026-09-30","status":"Licensed","zip":"93711","territory":"Hesham"},{"account_key":"470124","name":"DS VITALITY LLC DBA HOTWORX  (PORK CROSSING)","address":"8472 N FRIANT RD # 102","address2":"FRESNO CA 93720-1500","business_type":"Fitness Center/Salon","contact":"DALJIT GILL","phone":"(559)304-5050","start":"2026-09-08","expire":"2026-09-30","status":"Licensed","zip":"93720","territory":"Hesham"},{"account_key":"470274","name":"ENFORME ENTERPRISES LLC DBA VERGO TRAINING LAB","address":"4930 E ASHLAN AVE STE 103","address2":"FRESNO CA 93726-3025","business_type":"Dance Studio / Dance Instruction","contact":"STACIA SWAN","phone":"(559)473-6611","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93726","territory":"Hesham"},{"account_key":"470769","name":"EVOLVING YOU FAMILY THERAPY INC.","address":"1300 W SHAW AVE STE 3A","address2":"FRESNO CA 93711-3712","business_type":"Therapy Svcs. Profes. Group","contact":"JOSE NAVARRO","phone":"(559)577-9427","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93711","territory":"Hesham"},{"account_key":"470584","name":"FLUFFERS PET GROOMING","address":"1055 E HERNDON AVE STE 106","address2":"FRESNO CA 93720-3165","business_type":"Pet Grooming","contact":"FLUFFERS PET GROOMING","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93720","territory":"Hesham"},{"account_key":"470748","name":"FRESH AIR REPAIRS","address":"1361 N HAYES AVE","address2":"FRESNO CA 93723-9228","business_type":"Specialty Contr: Plbg./Heating / Aircond.","contact":"FRESH AIR CLIMATE CONTROL LLC","phone":"","start":"2026-09-01","expire":"2027-06-30","status":"Licensed","zip":"93723","territory":"Felix"},{"account_key":"470359","name":"FSA TIRE GROUP","address":"1606 S ORANGE AVE","address2":"FRESNO CA 93702-4255","business_type":"Tire Reconditioning / Repair","contact":"JESUS SALAS EVIA","phone":"(559)371-8336","start":"2026-09-04","expire":"2026-09-30","status":"Licensed","zip":"93702","territory":"Felix"},{"account_key":"470430","name":"GANG & EM","address":"4480 N LAFAYETTE AVE","address2":"FRESNO CA 93705-1226","business_type":"Retail Apparel: Mens & Accessories","contact":"JUAN A CENTENO JR","phone":"","start":"2026-09-15","expire":"2026-09-30","status":"Licensed","zip":"93705","territory":"Felix"},{"account_key":"470158","name":"HAPPY GOLF","address":"1817 N HELM AVE STE 102","address2":"FRESNO CA 93727-1631","business_type":"Golf Course","contact":"MUNICORN INC","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93727","territory":"Hesham"},{"account_key":"470547","name":"HOMEBAKED BY AMY","address":"5094 N ANNAPOLIS AVE","address2":"FRESNO CA 93723-4111","business_type":"Cottage Food Operator","contact":"AMELIA ESCALANTE","phone":"(559)472-6527","start":"2026-09-07","expire":"2026-09-30","status":"Licensed","zip":"93723","territory":"Felix"},{"account_key":"470492","name":"JAIRUS AUTO SERVICES","address":"7896 S WHITNER AVE","address2":"PARLIER CA 93648-2731","business_type":"Automotive Services; Unclass.","contact":"JAIRO M SANDOVAL","phone":"(559)480-0120","start":"2026-09-02","expire":"2026-09-30","status":"Licensed","zip":"93648","territory":"Felix"},{"account_key":"470719","name":"KHANG KHAI BBQ & KITCHEN","address":"635 N 1ST ST","address2":"FRESNO CA 93702-1809","business_type":"Fastfood With Drive Up Window","contact":"HUE LEA YANG","phone":"(559)260-0660","start":"2026-09-15","expire":"2026-09-30","status":"Licensed","zip":"93702","territory":"Felix"},{"account_key":"470713","name":"KMV PERMIT EXPRESS","address":"4705 N SONORA LN STE 107","address2":"FRESNO CA 93722-3947","business_type":"Service Specialty; Unclass.","contact":"VINOD SINGH","phone":"(347)659-8814","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93722","territory":"Hesham"},{"account_key":"470648","name":"LA KITCHEN 2","address":"3049 W ASHLAN AVE","address2":"FRESNO CA 93722-4502","business_type":"Restaurant","contact":"AUSTIN S KEOMANIVONG","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93722","territory":"Hesham"},{"account_key":"470634","name":"LA PERLA TAPATIA #1 CENADURIA","address":"4579 E KINGS CANYON RD STE 102","address2":"FRESNO CA 93702-3746","business_type":"Restaurant","contact":"MARTIN CONTRERAS","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93702","territory":"Felix"},{"account_key":"470739","name":"LOVE THE CAPTIVE","address":"1305 N FERGER AVE","address2":"FRESNO CA 93728-1604","business_type":"Marketing Consultant","contact":"LOVE THE CAPTIVE","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93728","territory":"Felix"},{"account_key":"470529","name":"LUXE STRAND HAIR COLLECTION AND HAIR LOSS SOLUTIONS LLC","address":"6687 N BLACKSTONE AVE STE 103","address2":"FRESNO CA 93710-3524","business_type":"Retail Cosmetics/Grooming/Personal Items","contact":"LUXE STRAND HAIR COLLECTION AND HAIR LOSS SOLUTIONS LLC","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93710","territory":"Hesham"},{"account_key":"470462","name":"MALY'S PIZZERIA & MORE","address":"3131 N MAROA AVE","address2":"FRESNO CA 93704-5647","business_type":"Restaurant","contact":"MALEE VUE","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93704","territory":"Felix"},{"account_key":"470580","name":"MARISCOS PERLA DEL PACIFICO, LLC","address":"3720 E OLIVE AVE","address2":"FRESNO CA 93702-1273","business_type":"Restaurant","contact":"DAVID SANCHEZ & MAYCE SANCHEZ","phone":"(559)960-6285","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93702","territory":"Felix"},{"account_key":"470692","name":"MORGAN'S SWEETS AND TREATS","address":"1512 E CHAMPLAIN DR STE 105","address2":"FRESNO CA 93720-5625","business_type":"Specialty/Gourmet Food/Bev. Store","contact":"JOHN DAVID ORELLANA","phone":"(559)394-7180","start":"2026-09-21","expire":"2026-09-30","status":"Licensed","zip":"93720","territory":"Hesham"},{"account_key":"470489","name":"OAK & LANTERN SOAP CO.","address":"1325 E FOXHILL DR APT 147","address2":"FRESNO CA 93720-5000","business_type":"Retail Cosmetics/Grooming/Personal Items","contact":"DANIEL C MOORE","phone":"","start":"2026-09-15","expire":"2026-09-30","status":"Licensed","zip":"93720","territory":"Hesham"},{"account_key":"470686","name":"OUTPOST PATIO","address":"6859 E DAYTON AVE","address2":"FRESNO CA 93727-9122","business_type":"Retail Furniture","contact":"C & L MALYLU, LLC","phone":"(559)492-0770","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93727","territory":"Hesham"},{"account_key":"470723","name":"OVER THE MOON VINTAGE","address":"913 DIAMOND RD W","address2":"MADERA CA 93636-9933","business_type":"Retail Antiques","contact":"JACQUELINE CURTI","phone":"(559)917-0030","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93636","territory":"Felix"},{"account_key":"470407","name":"PACIFIC INTERLOCK PAVERS INC.","address":"1536 S KAREN AVE","address2":"FRESNO CA 93727-5935","business_type":"Retail Garden Landscape Supply","contact":"PACIFIC INTERLOCK PAVERS INC.","phone":"","start":"2026-09-18","expire":"2026-09-30","status":"Licensed","zip":"93727","territory":"Hesham"},{"account_key":"470409","name":"PAPI'S MEXICAN GRILL","address":"1724 W BULLARD AVE","address2":"FRESNO CA 93711-2328","business_type":"Restaurant","contact":"PAPI'S REST MADERA INC","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93711","territory":"Hesham"},{"account_key":"470410","name":"PEACEFLO SPA LLC","address":"3749 N FRUIT AVE APT D","address2":"FRESNO CA 93705-5233","business_type":"Massage Therapist (Independent)","contact":"PEACEFLO SPA LLC","phone":"","start":"2026-09-15","expire":"2026-09-30","status":"Licensed","zip":"93705","territory":"Felix"},{"account_key":"470704","name":"PERF OPCO LLC DBA: PERFUMANIA","address":"643 E SHAW AVE # D20","address2":"FRESNO CA 93710-7703","business_type":"Retail Cosmetics/Grooming/Personal Items","contact":"ADRIAN VAZQUEZ","phone":"(754)799-5692","start":"2026-09-11","expire":"2026-09-30","status":"Licensed","zip":"93710","territory":"Hesham"},{"account_key":"470705","name":"RACHAS INC. DBA CHUZE FITNESS","address":"3684 W SHAW AVE","address2":"FRESNO CA 93711","business_type":"Fitness Center/Salon","contact":"DREW PORTER","phone":"(904)744-1336","start":"2026-09-30","expire":"2026-09-30","status":"Licensed","zip":"93711","territory":"Hesham"},{"account_key":"470588","name":"RADIANT TOUCH BY MAGGIE","address":"05 E OLIVE AVE","address2":"FRESNO CA 93728","business_type":"Cosmetologist Booth Rental","contact":"RADIANT TOUCH BY MAGGIE","phone":"(559)515-9205","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93728","territory":"Felix"},{"account_key":"470768","name":"RAMBO GEAR LLC","address":"1690 W SHAW AVE STE 220","address2":"FRESNO CA 93711-3519","business_type":"Accounting / Bookkeeping","contact":"RAMBO GEAR LLC","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93711","territory":"Hesham"},{"account_key":"470690","name":"RAMON'S AUTO SERVICE","address":"9591 S SHAFT AVE","address2":"SELMA CA 93662-2040","business_type":"Automotive Services; Unclass.","contact":"RAMON BARAJAS CORTEZ","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93662","territory":"Felix"},{"account_key":"448518","name":"RAMOS LAWN SERVICES","address":"727 S ARTHUR AVE","address2":"FRESNO CA 93706-1708","business_type":"Landsc. / Gardening / Lawnmowing","contact":"ISRAEL GARCIA RAMOS","phone":"(559)776-6809","start":"2026-09-30","expire":"2026-09-30","status":"Licensed","zip":"93706","territory":"Felix"},{"account_key":"470509","name":"REVERENT SCHOOL OF MOVEMENT LLC","address":"2448 N CLOVIS AVE STE A","address2":"FRESNO CA 93727-1215","business_type":"Recreational/Sports Facility; Unclass.","contact":"IMMANUEL KITSEN & ALLYSHA KITSEN","phone":"(559)388-1579","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93727","territory":"Hesham"},{"account_key":"470540","name":"ROYAL SWEET THAI DESSERT","address":"3785 N PALM AVE","address2":"FRESNO CA 93704-4728","business_type":"Restaurant","contact":"GE THAO","phone":"(559)899-5911","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93704","territory":"Felix"},{"account_key":"470249","name":"S.I.G.M. APPAREL AND CONVENIENCE","address":"3324 E MCKINLEY AVE","address2":"FRESNO CA 93703-3200","business_type":"Variety Store","contact":"FELIX I ESCOBAR III","phone":"(559)317-0060","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93703","territory":"Hesham"},{"account_key":"470568","name":"SCHNAU HAUS","address":"2191 W MINARETS AVE","address2":"FRESNO CA 93711-0473","business_type":"Animal Services; Unclass.","contact":"HALLAY M DUNLAVY","phone":"(559)430-9350","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93711","territory":"Hesham"},{"account_key":"470763","name":"SWETHA NADIPALLY","address":"5731 N FRESNO ST STE 103","address2":"FRESNO CA 93710-6075","business_type":"Dentist  (Yflat)","contact":"SWETHA NADIPALLY","phone":"","start":"2026-09-08","expire":"2027-06-30","status":"Licensed","zip":"93710","territory":"Hesham"},{"account_key":"470465","name":"TACOS EL GORDO","address":"4065 E ASHLAN AVE","address2":"FRESNO CA 93726-3734","business_type":"Restaurant","contact":"MOISES OROPEZA ALVA","phone":"","start":"2026-09-06","expire":"2026-09-30","status":"Licensed","zip":"93726","territory":"Hesham"},{"account_key":"470666","name":"TELLEZ TOWING LLC","address":"6129 W RICHERT AVE","address2":"FRESNO CA 93723-4144","business_type":"Towing","contact":"TELLEZ TOWING LLC","phone":"","start":"2026-09-04","expire":"2026-09-30","status":"Licensed","zip":"93723","territory":"Felix"},{"account_key":"470583","name":"THE GOLD STANDARD","address":"140 VAN NESS AVE","address2":"FRESNO CA 93721-3119","business_type":"Retail Jewelry / Gemstones","contact":"NANCY MCCART/ZACH HATCHER","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93721","territory":"Felix"},{"account_key":"470432","name":"VALLEY ELITE NOTARY & COURIER SERVICES","address":"2577 E SPICE WAY","address2":"FRESNO CA 93720-4933","business_type":"Service Specialty; Unclass.","contact":"VALLEY ELITE NOTARY & COURIER SERVICES","phone":"","start":"2026-09-01","expire":"2026-09-30","status":"Licensed","zip":"93720","territory":"Hesham"},{"account_key":"470644","name":"WILD FLORES BAKERY","address":"4615 E FOUNTAIN WAY","address2":"FRESNO CA 93726-7307","business_type":"Cottage Food Operator","contact":"KELSEY FLORES","phone":"(559)903-6995","start":"2026-09-30","expire":"2026-09-30","status":"Licensed","zip":"93726","territory":"Hesham"}];
+let leadTerr='All', leadDays=0, leadMap=null, leadMarkers=null, leadZipCenters={}, leadMapReady=false;
+
+function showTab(tab){
+  const territory=document.querySelector('.app'), leads=document.getElementById('leadsPanel');
+  const tbtn=document.getElementById('tabTerritory'), lbtn=document.getElementById('tabLeads');
+  if(tab==='leads'){
+    territory.style.display='none'; leads.style.display='block';
+    tbtn.classList.remove('active'); lbtn.classList.add('active');
+    if(!leadMapReady) initLeadMap();
+    setTimeout(()=>{if(leadMap) leadMap.invalidateSize()},100);
+    renderLeads();
+  }else{
+    territory.style.display='flex'; leads.style.display='none';
+    lbtn.classList.remove('active'); tbtn.classList.add('active');
+    setTimeout(()=>map.invalidateSize(),100);
+  }
+}
+function leadMapsUrl(r,apple){
+  const q=encodeURIComponent((r.address||'')+', '+(r.address2||''));
+  return apple?'https://maps.apple.com/?address='+q:'https://www.google.com/maps/search/?api=1&query='+q;
+}
+function renderLeads(){
+  const term=(document.getElementById('leadSearch').value||'').toLowerCase().trim();
+  const cutoff=leadDays?new Date(Date.now()-leadDays*864e5):null;
+  const rows=VERIFIED_LEADS.filter(r=>
+    (leadTerr==='All'||r.territory===leadTerr) &&
+    (!term||(r.name+' '+r.address+' '+r.address2+' '+r.zip+' '+r.business_type).toLowerCase().includes(term)) &&
+    (!cutoff||new Date(r.start)>=cutoff)
+  ).sort((a,b)=>b.start.localeCompare(a.start));
+  document.getElementById('leadTotal').textContent=rows.length;
+  document.getElementById('leadFelix').textContent=VERIFIED_LEADS.filter(r=>r.territory==='Felix').length;
+  document.getElementById('leadHesham').textContent=VERIFIED_LEADS.filter(r=>r.territory==='Hesham').length;
+  document.getElementById('leadCount').textContent=VERIFIED_LEADS.length;
+  document.getElementById('leadList').innerHTML=rows.length?rows.map(r=>'<article class="leadCard">'+
+    '<div class="leadTop"><div class="leadName">'+esc(r.name)+'</div><span class="leadBadge '+(r.territory==='Felix'?'leadFelix':'leadHesham')+'">'+esc(r.territory)+'</span></div>'+
+    '<div class="leadAddr">📍 '+esc(r.address)+'<br>'+esc(r.address2)+'</div>'+
+    '<div class="leadMeta"><b>Type:</b> '+esc(r.business_type||'—')+'<br>Started '+esc(r.start)+' • '+esc(r.status)+'</div>'+
+    '<div class="leadActions"><a class="appleLead" target="_blank" rel="noopener" href="'+leadMapsUrl(r,true)+'"> Apple Maps</a><a class="googleLead" target="_blank" rel="noopener" href="'+leadMapsUrl(r,false)+'">Google Maps</a></div>'+
+    '</article>').join(''):'<div class="empty">No businesses match your filters.</div>';
+
+  if(leadMapReady){
+    leadMarkers.clearLayers();
+    rows.forEach(r=>{
+      const c=leadZipCenters[r.zip];
+      if(c){
+        const col=r.territory==='Felix'?'#1683e8':'#e05252';
+        L.circleMarker(c,{radius:8,color:col,fillColor:col,fillOpacity:.85,weight:2})
+         .bindPopup('<b>'+esc(r.name)+'</b><br>'+esc(r.address)+'<br>'+esc(r.address2)+'<br><b>'+esc(r.territory)+'</b>')
+         .addTo(leadMarkers);
+      }
+    });
+  }
+}
+function initLeadMap(){
+  leadMap=L.map('leadMap',{zoomControl:true,preferCanvas:true}).setView([36.77,-119.75],10);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}).addTo(leadMap);
+  leadMarkers=L.layerGroup().addTo(leadMap);
+  leadMapReady=true;
+  const zips=[...new Set(VERIFIED_LEADS.map(r=>r.zip))];
+  const where=zips.map(z=>"'"+z+"'").join(',');
+  const u='https://services2.arcgis.com/6Miy5NqQWjMYTGFY/ArcGIS/rest/services/tl_2020_us_zcta520/FeatureServer/0/query?where='+
+    encodeURIComponent('ZCTA5CE20 IN ('+where+')')+'&outFields=ZCTA5CE20&returnGeometry=true&outSR=4326&f=geojson';
+  fetch(u).then(r=>r.json()).then(j=>{
+    (j.features||[]).forEach(f=>{
+      const z=String(f.properties.ZCTA5CE20).padStart(5,'0');
+      const c=centroid(f);
+      if(c) leadZipCenters[z]=c;
+    });
+    renderLeads();
+    const b=L.latLngBounds(Object.values(leadZipCenters));
+    if(b.isValid()) leadMap.fitBounds(b,{padding:[20,20]});
+  }).catch(()=>renderLeads());
+}
+document.getElementById('leadSearch').oninput=renderLeads;
+document.querySelectorAll('[data-lead-ter]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-lead-ter]').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active'); leadTerr=b.dataset.leadTer; renderLeads();
+});
+document.querySelectorAll('[data-lead-days]').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('[data-lead-days]').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active'); leadDays=+b.dataset.leadDays; renderLeads();
+});
+
+</script>
+</body>
+</html>
