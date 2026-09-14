@@ -33,9 +33,10 @@ async function scrapeClovis(page) {
   const from = `${m}/01/${y}`;
   const to = `${m}/${String(lastDay).padStart(2, '0')}/${y}`;
   await page.goto(CLOVIS_URL, { waitUntil: 'networkidle', timeout: 60000 });
-  await page.locator('a[href="#"]').click();
-  await page.locator('#FromDate').fill(from);
-  await page.locator('#ToDate').fill(to);
+  await page.locator('#FromDate').evaluate((field, values) => {
+    field.value = values.from;
+    document.querySelector('#ToDate').value = values.to;
+  }, { from, to });
   await page.locator('#searchByType').click();
   await page.waitForSelector('table tr:nth-child(2)', { timeout: 60000 });
   const rows = await page.locator('table tr').evaluateAll(trs => trs.slice(1).map(tr =>
