@@ -797,6 +797,66 @@ function leadMapsUrl(r,apple){
 }
 
 
+function publicContactSearchUrl(r){
+
+  const q=encodeURIComponent(
+    (r.name||'')+' '+
+    (r.address||'')+' '+
+    (r.address2||'')+
+    ' official website contact email'
+  );
+
+  return 'https://www.google.com/search?q='+q;
+
+}
+
+
+function prospectScore(r){
+
+  let score=35;
+  const reasons=[];
+  const start=new Date(r.start||'');
+  const age=Number.isNaN(start.getTime())
+    ?null
+    :Math.floor((Date.now()-start.getTime())/864e5);
+  const type=String(r.business_type||'').toLowerCase();
+
+  if(age!==null&&age>=0&&age<=30){
+    score+=25;
+    reasons.push('new this month');
+  }else if(age!==null&&age>=0&&age<=90){
+    score+=15;
+    reasons.push('recent filing');
+  }
+
+  if(r.phone){
+    score+=10;
+    reasons.push('public phone');
+  }
+
+  if(r.contact){
+    score+=10;
+    reasons.push('named business contact');
+  }
+
+  if(type.includes('individual')){
+    score+=10;
+    reasons.push('individual business filing');
+  }
+
+  if(r.source==='Fresno FBN'){
+    score+=5;
+    reasons.push('public DBA filing');
+  }
+
+  return {
+    score:Math.min(score,100),
+    reasons:reasons.length?reasons.join(' • '):'public business record'
+  };
+
+}
+
+
 function initLeadMap(){
 
   if(leadMapReady)return;
@@ -981,6 +1041,7 @@ function renderLeads(){
 
         const a=getAct(r);
         const leadEmail=a.email||r.email||'';
+        const prospect=prospectScore(r);
 
         const notes=
           (a.notes||[])
@@ -1118,6 +1179,14 @@ function renderLeads(){
             '<b>Lead status:</b> '+
             esc(st)+
 
+            '<br>'+
+
+            '<b>Prospect score:</b> '+
+            esc(prospect.score)+'/100'+
+            ' <span title="Score uses only public business lead details; it is not a personal or credit rating.">ⓘ</span>'+
+            '<br>'+
+            '<span>'+esc(prospect.reasons)+'</span>'+
+
             (
               a.lastContact
                 ?' • Last contact '+
@@ -1140,6 +1209,10 @@ function renderLeads(){
             '<a class="googleLead" target="_blank" rel="noopener" href="'+
               leadMapsUrl(r,false)+
             '">Google Maps</a>'+
+
+            '<a class="contactSearchLead" target="_blank" rel="noopener" href="'+
+              publicContactSearchUrl(r)+
+            '">🔎 Find public contact</a>'+
 
             (
               r.phone
