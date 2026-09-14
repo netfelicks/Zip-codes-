@@ -572,26 +572,48 @@ document.getElementById('f').onchange=buttons;
 buttons();
 
 
-const geoUrl=
-  'https://services2.arcgis.com/6Miy5NqQWjMYTGFY/ArcGIS/rest/services/tl_2020_us_zcta520/FeatureServer/0/query?where='+
-  encodeURIComponent(
-    "ZCTA5CE20 IN ('"+
-    ALL.join("','")+
-    "')"
-  )+
-  '&outFields=ZCTA5CE20'+
-  '&returnGeometry=true'+
-  '&outSR=4326'+
-  '&f=geojson';
+const geoBase=
+  'https://services2.arcgis.com/6Miy5NqQWjMYTGFY/ArcGIS/rest/services/tl_2020_us_zcta520/FeatureServer/0/query?where=';
 
 
-fetch(geoUrl)
+function geoUrl(zips){
 
-  .then(r=>r.json())
+  return geoBase+
+    encodeURIComponent(
+      "ZCTA5CE20 IN ('"+
+      zips.join("','")+
+      "')"
+    )+
+    '&outFields=ZCTA5CE20'+
+    '&returnGeometry=true'+
+    '&outSR=4326'+
+    '&f=geojson';
 
-  .then(j=>{
+}
 
-    (j.features||[]).forEach(addFeature);
+
+const geoChunks=[];
+
+for(let i=0;i<ALL.length;i+=50){
+  geoChunks.push(ALL.slice(i,i+50));
+}
+
+
+Promise.all(
+  geoChunks.map(chunk=>
+    fetch(geoUrl(chunk))
+      .then(r=>{
+        if(!r.ok)throw new Error('Map data HTTP '+r.status);
+        return r.json();
+      })
+  )
+)
+
+  .then(results=>{
+
+    results.forEach(j=>{
+      (j.features||[]).forEach(addFeature);
+    });
 
     allBounds=
       L.featureGroup(
