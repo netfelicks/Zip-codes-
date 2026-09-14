@@ -24,6 +24,34 @@ export function territoryForZip(zip) {
   return null;
 }
 
+export function dateToIso(value = '') {
+  const match = String(value).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (!match) return String(value).trim();
+  return `${match[3]}-${match[1].padStart(2, '0')}-${match[2].padStart(2, '0')}`;
+}
+
+export function leadFromAddress({ source, accountKey, name, fullAddress, start = '' }) {
+  const [address = '', ...location] = String(fullAddress).split(/,\s*/);
+  const address2 = location.join(', ');
+  const zip = zipFromAddress2(address2);
+  const territory = territoryForZip(zip);
+  if (!territory) return null;
+  return {
+    account_key: `${source}:${accountKey || `${name}|${address}|${zip}`}`,
+    source,
+    name: String(name).trim(),
+    address: address.trim(),
+    address2,
+    zip,
+    territory,
+    business_type: '',
+    contact: '',
+    phone: '',
+    start: dateToIso(start),
+    status: ''
+  };
+}
+
 export function parseCsv(text) {
   const rows = [];
   let row = [], field = '', quoted = false;
@@ -59,6 +87,7 @@ export function toLead(record) {
   const start = value(record, 'START_DATE', 'STARTDATE', 'LICENSE_START_DATE', 'DATE_STARTED');
   return {
     account_key: value(record, 'ACCOUNT_KEY', 'ACCOUNTNUMBER', 'ACCOUNT_NUMBER') || `${name}|${address}|${zip}`,
+    source: 'Fresno',
     name,
     address,
     address2,
@@ -67,7 +96,7 @@ export function toLead(record) {
     business_type: value(record, 'BUSINESS_TYPE', 'BUSINESS_CATEGORY', 'TYPE', 'CATEGORY'),
     contact: value(record, 'CONTACT', 'CONTACT_NAME', 'OWNER_NAME'),
     phone: value(record, 'PHONE', 'PHONE_NUMBER', 'TELEPHONE'),
-    start,
+    start: dateToIso(start),
     status: value(record, 'STATUS')
   };
 }
