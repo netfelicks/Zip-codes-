@@ -1,10 +1,17 @@
 {
-  "updated": "2026-09-14T03:21:49.134Z",
-  "source": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
+  "updated": "2026-09-14T03:40:27.759Z",
+  "sources": {
+    "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
+    "Clovis": "https://businesslicense.cityofclovis.com/Search/"
+  },
+  "warnings": [
+    "Clovis import skipped: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href=\"#\"]')\n"
+  ],
   "month": "September 2026",
   "leads": [
     {
       "account_key": "470875",
+      "source": "Fresno",
       "name": "2 HARD 2 HANDLE ENT & MORE",
       "address": "1277 S KAREN AVE",
       "address2": "FRESNO CA 93727-5260",
@@ -18,6 +25,7 @@
     },
     {
       "account_key": "470833",
+      "source": "Fresno",
       "name": "ADORABULLS PET GROOMING",
       "address": "1089 E SHAW AVE STE 106",
       "address2": "FRESNO CA 93710-7836",
@@ -31,6 +39,7 @@
     },
     {
       "account_key": "470848",
+      "source": "Fresno",
       "name": "AIDA'S CLEANING BUSINESS",
       "address": "6800 N MAPLE AVE APT 138",
       "address2": "FRESNO CA 93710-4554",
@@ -44,6 +53,7 @@
     },
     {
       "account_key": "470697",
+      "source": "Fresno",
       "name": "AMOR MOBILE BARTENDING",
       "address": "6843 N HIGHLAND AVE",
       "address2": "CLOVIS CA 93619-9092",
@@ -57,6 +67,7 @@
     },
     {
       "account_key": "470810",
+      "source": "Fresno",
       "name": "ARIAS VENDING LLC",
       "address": "1465 N ESTHER WAY",
       "address2": "FRESNO CA 93728-1311",
@@ -70,6 +81,7 @@
     },
     {
       "account_key": "470819",
+      "source": "Fresno",
       "name": "BAKED BY SHALU",
       "address": "1701 E TRENTON AVE",
       "address2": "FRESNO CA 93720-1985",
@@ -83,6 +95,7 @@
     },
     {
       "account_key": "470849",
+      "source": "Fresno",
       "name": "BEAR'S HAULING LLC",
       "address": "43602 CRYSTAL CAVE CIR",
       "address2": "COARSEGOLD CA 93614-9208",
@@ -96,6 +109,7 @@
     },
     {
       "account_key": "470538",
+      "source": "Fresno",
       "name": "BEAUTIFULLY RESTORED",
       "address": "7335 N 1ST ST STE 102",
       "address2": "FRESNO CA 93720-2968",
@@ -109,6 +123,7 @@
     },
     {
       "account_key": "470441",
+      "source": "Fresno",
       "name": "BRICK 3001 LLC",
       "address": "7089 N MARKS AVE STE 106",
       "address2": "FRESNO CA 93711-0267",
@@ -122,6 +137,7 @@
     },
     {
       "account_key": "470799",
+      "source": "Fresno",
       "name": "CINDY RODRIGUEZ",
       "address": "4215 E TULARE ST",
       "address2": "FRESNO CA 93702-3036",
@@ -135,6 +151,7 @@
     },
     {
       "account_key": "470691",
+      "source": "Fresno",
       "name": "CONSUMER CELLULAR, INCORPORATED",
       "address": "3099 W SHAW AVE STE 101",
       "address2": "FRESNO CA 93711-3209",
@@ -148,6 +165,7 @@
     },
     {
       "account_key": "470840",
+      "source": "Fresno",
       "name": "DETAIL TECH, LLC",
       "address": "1444 FULTON ST",
       "address2": "FRESNO CA 93721-1610",
@@ -161,6 +179,7 @@
     },
     {
       "account_key": "470783",
+      "source": "Fresno",
       "name": "DORA'S CLEANING SERVICE",
       "address": "1835 E ADAMS AVE",
       "address2": "FRESNO CA 93725-9500",
@@ -174,6 +193,7 @@
     },
     {
       "account_key": "470124",
+      "source": "Fresno",
       "name": "DS VITALITY LLC DBA HOTWORX  (PORK CROSSING)",
       "address": "8472 N FRIANT RD # 102",
       "address2": "FRESNO CA 93720-1500",
@@ -187,6 +207,7 @@
     },
     {
       "account_key": "470796",
+      "source": "Fresno",
       "name": "EFFICIENT SERVE LEGAL",
       "address": "2695 N SUNNYSIDE AVE STE 105",
       "address2": "FRESNO CA 93727-1340",
@@ -200,6 +221,7 @@
     },
     {
       "account_key": "470274",
+      "source": "Fresno",
       "name": "ENFORME ENTERPRISES LLC DBA VERGO TRAINING LAB",
       "address": "4930 E ASHLAN AVE STE 103",
       "address2": "FRESNO CA 93726-3025",
@@ -213,6 +235,7 @@
     },
     {
       "account_key": "470769",
+      "source": "Fresno",
       "name": "EVOLVING YOU FAMILY THERAPY INC.",
       "address": "1300 W SHAW AVE STE 3A",
       "address2": "FRESNO CA 93711-3712",
@@ -226,6 +249,7 @@
     },
     {
       "account_key": "470877",
+      "source": "Fresno",
       "name": "FELIX'S JUNK REMOVAL",
       "address": "4869 E FLORADORA AVE",
       "address2": "FRESNO CA 93727-1828",
@@ -239,6 +263,7 @@
     },
     {
       "account_key": "470584",
+      "source": "Fresno",
       "name": "FLUFFERS PET GROOMING",
       "address": "1055 E HERNDON AVE STE 106",
       "address2": "FRESNO CA 93720-3165",
@@ -252,6 +277,7 @@
     },
     {
       "account_key": "470748",
+      "source": "Fresno",
       "name": "FRESH AIR REPAIRS",
       "address": "1361 N HAYES AVE",
       "address2": "FRESNO CA 93723-9228",
@@ -265,6 +291,7 @@
     },
     {
       "account_key": "470359",
+      "source": "Fresno",
       "name": "FSA TIRE GROUP",
       "address": "1606 S ORANGE AVE",
       "address2": "FRESNO CA 93702-4255",
@@ -278,6 +305,7 @@
     },
     {
       "account_key": "470430",
+      "source": "Fresno",
       "name": "GANG & EM",
       "address": "4480 N LAFAYETTE AVE",
       "address2": "FRESNO CA 93705-1226",
@@ -291,6 +319,7 @@
     },
     {
       "account_key": "470809",
+      "source": "Fresno",
       "name": "GLORIA BARNES",
       "address": "7043 N CEDAR AVE",
       "address2": "FRESNO CA 93720-3324",
@@ -304,6 +333,7 @@
     },
     {
       "account_key": "470158",
+      "source": "Fresno",
       "name": "HAPPY GOLF",
       "address": "1817 N HELM AVE STE 102",
       "address2": "FRESNO CA 93727-1631",
@@ -317,6 +347,7 @@
     },
     {
       "account_key": "470782",
+      "source": "Fresno",
       "name": "HENRY CRUZ TIRE SHOP",
       "address": "1237 B ST",
       "address2": "FRESNO CA 93706-3204",
@@ -330,6 +361,7 @@
     },
     {
       "account_key": "470547",
+      "source": "Fresno",
       "name": "HOMEBAKED BY AMY",
       "address": "5094 N ANNAPOLIS AVE",
       "address2": "FRESNO CA 93723-4111",
@@ -343,6 +375,7 @@
     },
     {
       "account_key": "470492",
+      "source": "Fresno",
       "name": "JAIRUS AUTO SERVICES",
       "address": "7896 S WHITNER AVE",
       "address2": "PARLIER CA 93648-2731",
@@ -356,6 +389,7 @@
     },
     {
       "account_key": "470719",
+      "source": "Fresno",
       "name": "KHANG KHAI BBQ & KITCHEN",
       "address": "635 N 1ST ST",
       "address2": "FRESNO CA 93702-1809",
@@ -369,6 +403,7 @@
     },
     {
       "account_key": "470713",
+      "source": "Fresno",
       "name": "KMV PERMIT EXPRESS",
       "address": "4705 N SONORA LN STE 107",
       "address2": "FRESNO CA 93722-3947",
@@ -382,6 +417,7 @@
     },
     {
       "account_key": "470818",
+      "source": "Fresno",
       "name": "LA ESTRELLA BAZAR & MISCELANEA",
       "address": "3539 E VENTURA ST",
       "address2": "FRESNO CA 93702-3249",
@@ -395,6 +431,7 @@
     },
     {
       "account_key": "470648",
+      "source": "Fresno",
       "name": "LA KITCHEN 2",
       "address": "3049 W ASHLAN AVE",
       "address2": "FRESNO CA 93722-4502",
@@ -408,6 +445,7 @@
     },
     {
       "account_key": "470634",
+      "source": "Fresno",
       "name": "LA PERLA TAPATIA #1 CENADURIA",
       "address": "4579 E KINGS CANYON RD STE 102",
       "address2": "FRESNO CA 93702-3746",
@@ -421,6 +459,7 @@
     },
     {
       "account_key": "470847",
+      "source": "Fresno",
       "name": "LA SHULAS ANTOJITOS CHIHUAHUA",
       "address": "5637 N RAFAEL AVE",
       "address2": "FRESNO CA 93711-1522",
@@ -434,6 +473,7 @@
     },
     {
       "account_key": "470739",
+      "source": "Fresno",
       "name": "LOVE THE CAPTIVE",
       "address": "1305 N FERGER AVE",
       "address2": "FRESNO CA 93728-1604",
@@ -447,6 +487,7 @@
     },
     {
       "account_key": "470529",
+      "source": "Fresno",
       "name": "LUXE STRAND HAIR COLLECTION AND HAIR LOSS SOLUTIONS LLC",
       "address": "6687 N BLACKSTONE AVE STE 103",
       "address2": "FRESNO CA 93710-3524",
@@ -460,6 +501,7 @@
     },
     {
       "account_key": "470462",
+      "source": "Fresno",
       "name": "MALY'S PIZZERIA & MORE",
       "address": "3131 N MAROA AVE",
       "address2": "FRESNO CA 93704-5647",
@@ -473,6 +515,7 @@
     },
     {
       "account_key": "470580",
+      "source": "Fresno",
       "name": "MARISCOS PERLA DEL PACIFICO, LLC",
       "address": "3720 E OLIVE AVE",
       "address2": "FRESNO CA 93702-1273",
@@ -486,6 +529,7 @@
     },
     {
       "account_key": "470793",
+      "source": "Fresno",
       "name": "MID-CAL APPLIANCE REPAIR INC.",
       "address": "7284 N ANTIOCH AVE",
       "address2": "FRESNO CA 93722-3433",
@@ -499,6 +543,7 @@
     },
     {
       "account_key": "470692",
+      "source": "Fresno",
       "name": "MORGAN'S SWEETS AND TREATS",
       "address": "1512 E CHAMPLAIN DR STE 105",
       "address2": "FRESNO CA 93720-5625",
@@ -512,6 +557,7 @@
     },
     {
       "account_key": "470866",
+      "source": "Fresno",
       "name": "NATHAN JAMES HENDERSON",
       "address": "187 W SAMPLE AVE",
       "address2": "FRESNO CA 93704-1534",
@@ -525,6 +571,7 @@
     },
     {
       "account_key": "470489",
+      "source": "Fresno",
       "name": "OAK & LANTERN SOAP CO.",
       "address": "1325 E FOXHILL DR APT 147",
       "address2": "FRESNO CA 93720-5000",
@@ -538,6 +585,7 @@
     },
     {
       "account_key": "470686",
+      "source": "Fresno",
       "name": "OUTPOST PATIO",
       "address": "6859 E DAYTON AVE",
       "address2": "FRESNO CA 93727-9122",
@@ -551,6 +599,7 @@
     },
     {
       "account_key": "470723",
+      "source": "Fresno",
       "name": "OVER THE MOON VINTAGE",
       "address": "913 DIAMOND RD W",
       "address2": "MADERA CA 93636-9933",
@@ -564,6 +613,7 @@
     },
     {
       "account_key": "470407",
+      "source": "Fresno",
       "name": "PACIFIC INTERLOCK PAVERS INC.",
       "address": "1536 S KAREN AVE",
       "address2": "FRESNO CA 93727-5935",
@@ -577,6 +627,7 @@
     },
     {
       "account_key": "470409",
+      "source": "Fresno",
       "name": "PAPI'S MEXICAN GRILL",
       "address": "1724 W BULLARD AVE",
       "address2": "FRESNO CA 93711-2328",
@@ -590,6 +641,7 @@
     },
     {
       "account_key": "470410",
+      "source": "Fresno",
       "name": "PEACEFLO SPA LLC",
       "address": "3749 N FRUIT AVE APT D",
       "address2": "FRESNO CA 93705-5233",
@@ -603,6 +655,7 @@
     },
     {
       "account_key": "470704",
+      "source": "Fresno",
       "name": "PERF OPCO LLC DBA: PERFUMANIA",
       "address": "643 E SHAW AVE # D20",
       "address2": "FRESNO CA 93710-7703",
@@ -616,6 +669,7 @@
     },
     {
       "account_key": "470805",
+      "source": "Fresno",
       "name": "PURE SHINE EXTERIOR CLEANING",
       "address": "2475 N FORDHAM AVE",
       "address2": "FRESNO CA 93727-8617",
@@ -629,6 +683,7 @@
     },
     {
       "account_key": "470705",
+      "source": "Fresno",
       "name": "RACHAS INC. DBA CHUZE FITNESS",
       "address": "3684 W SHAW AVE",
       "address2": "FRESNO CA 93711",
@@ -642,6 +697,7 @@
     },
     {
       "account_key": "470588",
+      "source": "Fresno",
       "name": "RADIANT TOUCH BY MAGGIE",
       "address": "05 E OLIVE AVE",
       "address2": "FRESNO CA 93728",
@@ -655,6 +711,7 @@
     },
     {
       "account_key": "470772",
+      "source": "Fresno",
       "name": "RAINBOW @ SPA",
       "address": "703 N FULTON ST STE 101",
       "address2": "FRESNO CA 93728-3405",
@@ -668,6 +725,7 @@
     },
     {
       "account_key": "470768",
+      "source": "Fresno",
       "name": "RAMBO GEAR LLC",
       "address": "1690 W SHAW AVE STE 220",
       "address2": "FRESNO CA 93711-3519",
@@ -681,6 +739,7 @@
     },
     {
       "account_key": "470690",
+      "source": "Fresno",
       "name": "RAMON'S AUTO SERVICE",
       "address": "9591 S SHAFT AVE",
       "address2": "SELMA CA 93662-2040",
@@ -694,6 +753,7 @@
     },
     {
       "account_key": "448518",
+      "source": "Fresno",
       "name": "RAMOS LAWN SERVICES",
       "address": "727 S ARTHUR AVE",
       "address2": "FRESNO CA 93706-1708",
@@ -707,6 +767,7 @@
     },
     {
       "account_key": "470509",
+      "source": "Fresno",
       "name": "REVERENT SCHOOL OF MOVEMENT LLC",
       "address": "2448 N CLOVIS AVE STE A",
       "address2": "FRESNO CA 93727-1215",
@@ -720,6 +781,7 @@
     },
     {
       "account_key": "470540",
+      "source": "Fresno",
       "name": "ROYAL SWEET THAI DESSERT",
       "address": "3785 N PALM AVE",
       "address2": "FRESNO CA 93704-4728",
@@ -733,6 +795,7 @@
     },
     {
       "account_key": "470249",
+      "source": "Fresno",
       "name": "S.I.G.M. APPAREL AND CONVENIENCE",
       "address": "3324 E MCKINLEY AVE",
       "address2": "FRESNO CA 93703-3200",
@@ -746,6 +809,7 @@
     },
     {
       "account_key": "470876",
+      "source": "Fresno",
       "name": "SALT DROP STUDIOS",
       "address": "4081 N FRUIT AVE APT 107",
       "address2": "FRESNO CA 93705-2138",
@@ -759,6 +823,7 @@
     },
     {
       "account_key": "470568",
+      "source": "Fresno",
       "name": "SCHNAU HAUS",
       "address": "2191 W MINARETS AVE",
       "address2": "FRESNO CA 93711-0473",
@@ -772,6 +837,7 @@
     },
     {
       "account_key": "470806",
+      "source": "Fresno",
       "name": "SNAP PRINT KEEPS",
       "address": "1050 E HERNDON AVE APT 159",
       "address2": "FRESNO CA 93720-3140",
@@ -785,6 +851,7 @@
     },
     {
       "account_key": "470763",
+      "source": "Fresno",
       "name": "SWETHA NADIPALLY",
       "address": "5731 N FRESNO ST STE 103",
       "address2": "FRESNO CA 93710-6075",
@@ -798,6 +865,7 @@
     },
     {
       "account_key": "470465",
+      "source": "Fresno",
       "name": "TACOS EL GORDO",
       "address": "4065 E ASHLAN AVE",
       "address2": "FRESNO CA 93726-3734",
@@ -811,6 +879,7 @@
     },
     {
       "account_key": "470666",
+      "source": "Fresno",
       "name": "TELLEZ TOWING LLC",
       "address": "6129 W RICHERT AVE",
       "address2": "FRESNO CA 93723-4144",
@@ -824,6 +893,7 @@
     },
     {
       "account_key": "470583",
+      "source": "Fresno",
       "name": "THE GOLD STANDARD",
       "address": "140 VAN NESS AVE",
       "address2": "FRESNO CA 93721-3119",
@@ -837,6 +907,7 @@
     },
     {
       "account_key": "470432",
+      "source": "Fresno",
       "name": "VALLEY ELITE NOTARY & COURIER SERVICES",
       "address": "2577 E SPICE WAY",
       "address2": "FRESNO CA 93720-4933",
@@ -850,6 +921,7 @@
     },
     {
       "account_key": "470858",
+      "source": "Fresno",
       "name": "VALLEY FLEET CLEAN INC",
       "address": "4545 N BENDEL AVE",
       "address2": "FRESNO CA 93722-3902",
@@ -863,6 +935,7 @@
     },
     {
       "account_key": "470857",
+      "source": "Fresno",
       "name": "VAN BEURDEN INSURANCE SERVICES, INC.",
       "address": "7485 N PALM AVE STE 100",
       "address2": "FRESNO CA 93711-5764",
@@ -876,6 +949,7 @@
     },
     {
       "account_key": "470838",
+      "source": "Fresno",
       "name": "VICTOR HANDYMAN",
       "address": "545 N LAFAYETTE AVE",
       "address2": "FRESNO CA 93728-2525",
@@ -889,6 +963,7 @@
     },
     {
       "account_key": "470644",
+      "source": "Fresno",
       "name": "WILD FLORES BAKERY",
       "address": "4615 E FOUNTAIN WAY",
       "address2": "FRESNO CA 93726-7307",
