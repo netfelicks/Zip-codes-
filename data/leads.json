@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T05:08:31.219Z",
+  "updated": "2026-09-14T16:24:51.225Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -11,6 +11,21 @@
   "month": "September 2026",
   "leads": [
     {
+      "account_key": "Fresno FBN:2202610004112",
+      "source": "Fresno FBN",
+      "name": "PREMIER JUNK REMOVAL SERVICES",
+      "address": "1140 PEACH TREE DR.",
+      "address2": "MADERA, CA 93637 MADERA COUNTY PHONE (404) 702-2812 :",
+      "zip": "93637",
+      "territory": "Felix",
+      "business_type": "limited liability company",
+      "contact": "PREMIER HOME RENOVATION, LLC , 1140 PEACH TREE DR MADERA CA 93637 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-04",
+      "status": ""
+    },
+    {
       "account_key": "Fresno FBN:2202610003965",
       "source": "Fresno FBN",
       "name": "Bauer's Auto Wrecking",
@@ -20,6 +35,7 @@
       "territory": "Felix",
       "business_type": "A Individual",
       "contact": "Edward Mason, 2029 S. Fairway Ave, Fresno, CA 93727",
+      "email": "",
       "phone": "",
       "start": "2026-08-26",
       "status": ""
@@ -34,6 +50,7 @@
       "territory": "Felix",
       "business_type": "a corporation",
       "contact": "IMGRX SJ Valley, Inc., 13651 DUBLIN COURT STAFFORD TX 77477.",
+      "email": "",
       "phone": "",
       "start": "2026-08-26",
       "status": ""
@@ -48,6 +65,7 @@
       "territory": "Felix",
       "business_type": "a corporation",
       "contact": "IMGRX SJ Valley, Inc., 13651 DUBLIN COURT STAFFORD TX 77477",
+      "email": "",
       "phone": "",
       "start": "2026-08-26",
       "status": ""
@@ -62,8 +80,39 @@
       "territory": "Hesham",
       "business_type": "a corporation",
       "contact": "IMGRX SJ Valley, Inc. , 13651 DUBLIN COURT STAFFORD TX 77477",
+      "email": "",
       "phone": "",
       "start": "2026-08-26",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610003951",
+      "source": "Fresno FBN",
+      "name": "KASAIAN PROPERTIES I",
+      "address": "779 West San Madele",
+      "address2": "Fresno, CA 93704",
+      "zip": "93704",
+      "territory": "Felix",
+      "business_type": "a general partnership",
+      "contact": "(1) Jennifer Blum, Trustee of the Jerry A. Emerzian Survivors' Trust, created under the Jerry and Rosalyn Emerzian Trust Agreement, dated August 2, 2004  2128 West Spruce Avenue, Fresno, CA 93711  (2) Jeanine Richburg, Trustee of the Jerry A. Emerzian Survivors' Trust, created under the Jerry and Rosalyn Emerzian Trust Agreement, dated August 2, 2004  2321 West Alluvial Avenue, Fresno, CA 93711  (3) John J. Kasaian, Trustee of the John J. and Suzelle Kasaian 2013 Trust  779 West San Madele, Fresno, CA 93704  (4) Suzelle Kasaian, Trustee of the John J. and Suzelle Kasaian 2013 Trust  779 West San Madele, Fresno, CA 93704  (5) Leo Manoogian, Trustee of the Manoogian Family Revocable Trust, dated  April 16, 1997  935 East Sutton Drive, Fresno, CA 93720  (6) Carolyn Manoogian, Trustee of the Manoogian Family Revocable Trust, dated April 16, 1997  935 East Sutton Drive, Fresno, CA 93720  (7) Jason Manoogian, Trustee of the Manoogian Revocable Trust, dated April 16, 1997  9435 Swan Lake Drive, Granite Bay, CA 95746  (8) Julie Sack, Trustee of the Manoogian Family Revocable Trust, dated April 16, 1997  27506 County Lane Road, Laguna Nigel, CA 92677",
+      "email": "",
+      "phone": "",
+      "start": "2026-08-25",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610003919",
+      "source": "Fresno FBN",
+      "name": "CALIFORNIA INDOOR COMFORT",
+      "address": "4323 N. SELLAND AVE #106",
+      "address2": "FRESNO, CA 93722",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "a limited liability company",
+      "contact": "CIC ENTERPRISES, LLC , 1401 21ST ST STE R Sacramento CA 95811 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-08-24",
       "status": ""
     },
     {
@@ -76,6 +125,7 @@
       "territory": "Hesham",
       "business_type": "A Corporation",
       "contact": "Mojabi Labs, Inc., 2342 Trenton Ave, Clovis, CA 93619, Fresno County.",
+      "email": "",
       "phone": "",
       "start": "2026-08-24",
       "status": ""
@@ -90,6 +140,7 @@
       "territory": "Hesham",
       "business_type": "a corporation",
       "contact": "Mastro Property Management, Inc ., 7083 N. Teilman, Unit 101 Fresno California 93711.",
+      "email": "",
       "phone": "",
       "start": "2026-08-21",
       "status": ""
@@ -104,6 +155,7 @@
       "territory": "Felix",
       "business_type": "an individual",
       "contact": "SALEH ALI YEHIA ,   2040 LANDUCCI DR FIREBAUGH CA 93622.",
+      "email": "",
       "phone": "",
       "start": "2026-08-20",
       "status": ""
@@ -118,6 +170,7 @@
       "territory": "Felix",
       "business_type": "an individual",
       "contact": "SALEH ALI YEHIA ,   2040 LANDUCCI DR FIREBAUGH CA 93622 .",
+      "email": "",
       "phone": "",
       "start": "2026-08-20",
       "status": ""
@@ -132,6 +185,7 @@
       "territory": "Felix",
       "business_type": "an individual",
       "contact": "SALEH ALI YEHIA ,   2040 LANDUCCI DR FIREBAUGH CA 93622 .",
+      "email": "",
       "phone": "",
       "start": "2026-08-20",
       "status": ""
@@ -146,6 +200,7 @@
       "territory": "Felix",
       "business_type": "an individual",
       "contact": "JENNY GONZALEZ , 14615 W KEARNY BLVD KERMAN CA 93630 .",
+      "email": "",
       "phone": "",
       "start": "2026-08-19",
       "status": ""
@@ -160,6 +215,7 @@
       "territory": "Hesham",
       "business_type": "an individual",
       "contact": "PUNARDEEP SINGH CHHABRA, 3046 INDIANAPOLIS AVE. CLOVIS CA 93619",
+      "email": "",
       "phone": "",
       "start": "2026-08-17",
       "status": ""
@@ -174,6 +230,7 @@
       "territory": "Hesham",
       "business_type": "A Corporation",
       "contact": "Rapid Urgent Care, 2151 Herndon Ave, Ste 102, Clovis, CA 93611 .",
+      "email": "",
       "phone": "",
       "start": "2026-08-04",
       "status": ""
@@ -188,6 +245,7 @@
       "territory": "Hesham",
       "business_type": "an individual",
       "contact": "DAVID MANUEL ANGULO , 2594 ARMSTRONG AVE., FRESNO, CA 93727",
+      "email": "",
       "phone": "",
       "start": "2026-08-03",
       "status": ""
@@ -202,6 +260,7 @@
       "territory": "Felix",
       "business_type": "an individual",
       "contact": "RACHEL WRIGHT HILL ,   5424 N PALM AVE, STE 108 FRESNO CA 93704 .",
+      "email": "",
       "phone": "",
       "start": "2026-07-31",
       "status": ""
@@ -216,6 +275,7 @@
       "territory": "Felix",
       "business_type": "a corporation",
       "contact": "Metro Hospitality Services Inc , 808 M Street, Fresno, CA 93721",
+      "email": "",
       "phone": "",
       "start": "2026-07-30",
       "status": ""
@@ -230,6 +290,7 @@
       "territory": "Hesham",
       "business_type": "a corporation",
       "contact": "Community Care Health Plan, Inc. ,   1630 E Shaw Ave, Ste 101 Fresno CA 93710 .",
+      "email": "",
       "phone": "",
       "start": "2026-07-29",
       "status": ""
@@ -244,6 +305,7 @@
       "territory": "Felix",
       "business_type": "a corporation",
       "contact": "LANDMARK COMMERCIAL GROUP , 8953 BERGAMO CIRCLE, STOCKTON, CA 95212",
+      "email": "",
       "phone": "",
       "start": "2026-07-10",
       "status": ""
@@ -258,6 +320,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "JAMES ANTONY ZAMARRIPA",
+      "email": "",
       "phone": "(702)861-9666",
       "start": "",
       "status": ""
@@ -272,6 +335,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "ROBERT CORTEZ",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -286,6 +350,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "JESUS MORENO CRUZ/AIDA LUZ MORENO",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -300,6 +365,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "ANGELICA LOPEZ",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -314,6 +380,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "ARIAS VENDING LLC",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -328,6 +395,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "SHALINI NARR",
+      "email": "",
       "phone": "(559)708-5958",
       "start": "",
       "status": ""
@@ -342,6 +410,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "JOHN ROBERT FENT JR",
+      "email": "",
       "phone": "(559)800-6832",
       "start": "",
       "status": ""
@@ -356,6 +425,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "ROSAELENA ROJAS",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -370,6 +440,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "NICHOLS M BOGANWRIGHT",
+      "email": "",
       "phone": "(085)952-1152",
       "start": "",
       "status": ""
@@ -384,6 +455,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "CINDY RODRIGUEZ",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -398,6 +470,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "BOBBIE REYES",
+      "email": "",
       "phone": "(602)229-6312",
       "start": "",
       "status": ""
@@ -412,6 +485,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "FRANCISCO M. CHAVEZ",
+      "email": "",
       "phone": "(559)652-1622",
       "start": "",
       "status": ""
@@ -426,6 +500,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "DORA RODRIGUEZ",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -440,6 +515,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "DALJIT GILL",
+      "email": "",
       "phone": "(559)304-5050",
       "start": "",
       "status": ""
@@ -454,6 +530,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "JESSE YANG",
+      "email": "",
       "phone": "(559)776-7291",
       "start": "",
       "status": ""
@@ -468,6 +545,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "STACIA SWAN",
+      "email": "",
       "phone": "(559)473-6611",
       "start": "",
       "status": ""
@@ -482,6 +560,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "JOSE NAVARRO",
+      "email": "",
       "phone": "(559)577-9427",
       "start": "",
       "status": ""
@@ -496,6 +575,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "JESUS A FELIX RAMIREZ",
+      "email": "",
       "phone": "(559)890-1772",
       "start": "",
       "status": ""
@@ -510,6 +590,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "FLUFFERS PET GROOMING",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -524,6 +605,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "FRESH AIR CLIMATE CONTROL LLC",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -538,6 +620,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "JESUS SALAS EVIA",
+      "email": "",
       "phone": "(559)371-8336",
       "start": "",
       "status": ""
@@ -552,6 +635,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "JUAN A CENTENO JR",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -566,6 +650,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "GLORIA RODRIGUEZ BARNES",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -580,6 +665,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "MUNICORN INC",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -594,6 +680,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "HILLARY RAMOS CRUZ",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -608,6 +695,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "AMELIA ESCALANTE",
+      "email": "",
       "phone": "(559)472-6527",
       "start": "",
       "status": ""
@@ -622,6 +710,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "JAIRO M SANDOVAL",
+      "email": "",
       "phone": "(559)480-0120",
       "start": "",
       "status": ""
@@ -636,6 +725,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "HUE LEA YANG",
+      "email": "",
       "phone": "(559)260-0660",
       "start": "",
       "status": ""
@@ -650,6 +740,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "VINOD SINGH",
+      "email": "",
       "phone": "(347)659-8814",
       "start": "",
       "status": ""
@@ -664,6 +755,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "MARIA DE LA C RIVERA",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -678,6 +770,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "AUSTIN S KEOMANIVONG",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -692,6 +785,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "MARTIN CONTRERAS",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -706,6 +800,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "CLAUDIA ELIZABETH BAUTISTA",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -720,6 +815,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "LOVE THE CAPTIVE",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -734,6 +830,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "LUXE STRAND HAIR COLLECTION AND HAIR LOSS SOLUTIONS LLC",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -748,6 +845,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "MALEE VUE",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -762,6 +860,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "DAVID SANCHEZ & MAYCE SANCHEZ",
+      "email": "",
       "phone": "(559)960-6285",
       "start": "",
       "status": ""
@@ -776,6 +875,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "RICARDO ESPAIN",
+      "email": "",
       "phone": "(559)307-9136",
       "start": "",
       "status": ""
@@ -790,6 +890,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "JOHN DAVID ORELLANA",
+      "email": "",
       "phone": "(559)394-7180",
       "start": "",
       "status": ""
@@ -804,6 +905,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "NATHAN JAMES HENDERSON",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -818,6 +920,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "DANIEL C MOORE",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -832,6 +935,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "C & L MALYLU, LLC",
+      "email": "",
       "phone": "(559)492-0770",
       "start": "",
       "status": ""
@@ -846,6 +950,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "JACQUELINE CURTI",
+      "email": "",
       "phone": "(559)917-0030",
       "start": "",
       "status": ""
@@ -860,6 +965,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "PACIFIC INTERLOCK PAVERS INC.",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -874,6 +980,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "PAPI'S REST MADERA INC",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -888,6 +995,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "PEACEFLO SPA LLC",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -902,6 +1010,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "ADRIAN VAZQUEZ",
+      "email": "",
       "phone": "(754)799-5692",
       "start": "",
       "status": ""
@@ -916,6 +1025,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "MARIO SIERRA",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -930,6 +1040,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "DREW PORTER",
+      "email": "",
       "phone": "(904)744-1336",
       "start": "",
       "status": ""
@@ -944,6 +1055,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "RADIANT TOUCH BY MAGGIE",
+      "email": "",
       "phone": "(559)515-9205",
       "start": "",
       "status": ""
@@ -958,6 +1070,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "GILBERT BRIONES",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -972,6 +1085,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "RAMBO GEAR LLC",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -986,6 +1100,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "RAMON BARAJAS CORTEZ",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -1000,6 +1115,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "ISRAEL GARCIA RAMOS",
+      "email": "",
       "phone": "(559)776-6809",
       "start": "",
       "status": ""
@@ -1014,6 +1130,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "IMMANUEL KITSEN & ALLYSHA KITSEN",
+      "email": "",
       "phone": "(559)388-1579",
       "start": "",
       "status": ""
@@ -1028,6 +1145,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "GE THAO",
+      "email": "",
       "phone": "(559)899-5911",
       "start": "",
       "status": ""
@@ -1042,6 +1160,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "FELIX I ESCOBAR III",
+      "email": "",
       "phone": "(559)317-0060",
       "start": "",
       "status": ""
@@ -1056,6 +1175,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "ASHLIE SCHOLZ",
+      "email": "",
       "phone": "(559)704-6595",
       "start": "",
       "status": ""
@@ -1070,6 +1190,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "HALLAY M DUNLAVY",
+      "email": "",
       "phone": "(559)430-9350",
       "start": "",
       "status": ""
@@ -1084,6 +1205,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "TUYEN PHAM",
+      "email": "",
       "phone": "(209)445-7797",
       "start": "",
       "status": ""
@@ -1098,6 +1220,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "SWETHA NADIPALLY",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -1112,6 +1235,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "MOISES OROPEZA ALVA",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -1126,6 +1250,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "TELLEZ TOWING LLC",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -1140,6 +1265,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "NANCY MCCART/ZACH HATCHER",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -1154,6 +1280,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "VALLEY ELITE NOTARY & COURIER SERVICES",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -1168,6 +1295,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "JACOB HATHAWAY",
+      "email": "",
       "phone": "(805)390-2676",
       "start": "",
       "status": ""
@@ -1182,6 +1310,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "CHRISTIAN VAN BEURDEN",
+      "email": "",
       "phone": "(559)280-4907",
       "start": "",
       "status": ""
@@ -1196,6 +1325,7 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "VICTOR VELASQUEZ HERNANDEZ",
+      "email": "",
       "phone": "",
       "start": "",
       "status": ""
@@ -1210,6 +1340,7 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "KELSEY FLORES",
+      "email": "",
       "phone": "(559)903-6995",
       "start": "",
       "status": ""
