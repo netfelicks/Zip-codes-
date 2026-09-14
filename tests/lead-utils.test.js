@@ -11,6 +11,7 @@ test('extracts a five-digit ZIP from ADDRESS2', () => {
 test('keeps only ZIPs assigned to a territory', () => {
   assert.equal(territoryForZip('93727'), 'Hesham');
   assert.equal(territoryForZip('93704'), 'Felix');
+  assert.equal(territoryForZip('95350'), 'Johnny');
   assert.equal(territoryForZip('99999'), null);
 });
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Felix Territory</title>
+<title>Territory Map</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
 *{box-sizing:border-box}
@@ -14,12 +14,12 @@ header{background:#101828;color:#fff;padding:14px 16px}
 .side{width:350px;background:#fff;overflow:auto;padding:12px;border-right:1px solid #ddd;z-index:1000}
 .mapwrap{flex:1;min-width:0;position:relative}#map{position:absolute;inset:0}
 .card{background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:12px;margin-bottom:10px}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}.stat{color:#fff;border-radius:12px;padding:10px}.stat b{font-size:28px;display:block}
-.blue{background:#1683e8}.red{background:#e05252}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{color:#fff;border-radius:12px;padding:10px}.stat b{font-size:28px;display:block}
+.blue{background:#1683e8}.red{background:#e05252}.green{background:#168a62}
 h2{font-size:14px;margin:0 0 9px}
 input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px;font-size:15px;margin-bottom:8px;background:#fff}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5px}.zip{padding:8px 2px;border-radius:8px;border:1px solid #d8dde3;font-size:11px;font-weight:700;background:#f8fafc}
-.zip.fz{background:#eef7ff;border-color:#a8d0f5}.zip.hz{background:#fff1f1;border-color:#efadad}.zip.on{outline:3px solid #111827}
+.zip.fz{background:#eef7ff;border-color:#a8d0f5}.zip.hz{background:#fff1f1;border-color:#efadad}.zip.jz{background:#eef9f3;border-color:#9ed9bc}.zip.on{outline:3px solid #111827}
 .big{font-size:21px;font-weight:800}.small{font-size:12px;color:#667085;line-height:1.4}
 .action{display:block;background:#111827;color:#fff;text-decoration:none;text-align:center;padding:11px;border-radius:10px;margin-top:8px;font-weight:700}
 .bizgrid{display:grid;grid-template-columns:1fr 1fr;gap:6px}.biz{padding:9px 4px;border:1px solid #ddd;border-radius:9px;background:#fff;font-weight:700;font-size:11px}
@@ -31,7 +31,7 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
 .topbtn.active{background:#fff;color:#101828}
 #leadsPanel{display:none;height:calc(100vh - 111px);overflow:auto;background:#f4f5f7}
 .leadsWrap{max-width:1100px;margin:auto;padding:14px}
-.leadStats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-bottom:12px}
+.leadStats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:12px}
 .leadStat{background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:12px;text-align:center}
 .leadStat b{display:block;font-size:24px}.leadStat span{font-size:12px;color:#667085}
 .leadControls{background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:12px;margin-bottom:12px}
@@ -44,7 +44,7 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
 .leadTop{display:flex;justify-content:space-between;gap:8px}
 .leadName{font-size:16px;font-weight:800}
 .leadBadge{font-size:11px;color:#fff;border-radius:999px;padding:5px 8px;white-space:nowrap;height:max-content}
-.leadFelix{background:#1683e8}.leadHesham{background:#e05252}
+.leadFelix{background:#1683e8}.leadHesham{background:#e05252}.leadJohnny{background:#168a62}
 .leadAddr{margin-top:7px;line-height:1.4}
 .leadMeta{font-size:12px;color:#667085;margin-top:7px}
 .leadActions{display:flex;gap:7px;margin-top:10px;flex-wrap:wrap}
@@ -78,7 +78,7 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
 <body>
 
 <header>
-  <div class="title">Felix Territory</div>
+  <div class="title">Territory Map</div>
   <div class="sub">2020 Census ZIP boundaries • OpenStreetMap • Monthly lead data</div>
 
   <div class="topnav">
@@ -106,6 +106,11 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
       <span>Hesham</span>
       <b>31</b> ZIPs
     </div>
+
+    <div class="stat green">
+      <span>Johnny</span>
+      <b>101</b> ZIPs
+    </div>
   </div>
 
   <div class="card">
@@ -117,6 +122,7 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
       <option value="all">All ZIPs</option>
       <option value="felix">Felix Territory</option>
       <option value="hesham">Hesham</option>
+      <option value="johnny">Johnny</option>
     </select>
 
     <div id="grid" class="grid"></div>
@@ -128,6 +134,10 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
 
       <span>
         <i class="dot" style="background:#e05252"></i>Hesham
+      </span>
+
+      <span>
+        <i class="dot" style="background:#168a62"></i>Johnny
       </span>
     </div>
   </div>
@@ -181,6 +191,11 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
       <span>🔴 Hesham</span>
     </div>
 
+    <div class="leadStat">
+      <b id="leadJohnny">0</b>
+      <span>🟢 Johnny</span>
+    </div>
+
   </div>
 
 
@@ -204,6 +219,10 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
 
       <button class="leadBtn" data-lead-ter="Hesham">
         🔴 Hesham
+      </button>
+
+      <button class="leadBtn" data-lead-ter="Johnny">
+        🟢 Johnny
       </button>
 
     </div>
@@ -318,12 +337,27 @@ const HESHAM=[
 '93726','93727','93730'
 ];
 
-const ALL=[...FELIX,...HESHAM];
+const JOHNNY=[
+'93512','93514','93517','93541','93546','93601','93604','93605','93606','93623',
+'93634','93635','93645','93653','93661','93664','93665','93669','95202','95203',
+'95204','95205','95207','95209','95210','95211','95212','95215','95220','95228',
+'95230','95231','95236','95237','95240','95242','95247','95258','95301','95303',
+'95305','95306','95307','95310','95312','95313','95315','95316','95317','95318',
+'95319','95320','95321','95322','95323','95324','95326','95327','95328','95329',
+'95333','95334','95335','95336','95337','95338','95340','95341','95343','95344',
+'95345','95346','95348','95350','95351','95354','95355','95356','95357','95358',
+'95360','95361','95363','95364','95365','95366','95367','95368','95369','95370',
+'95372','95374','95379','95380','95382','95383','95386','95388','95389','96107',
+'96133'
+];
+
+const ALL=[...FELIX,...HESHAM,...JOHNNY];
 
 const terr={};
 
 FELIX.forEach(z=>terr[z]='felix');
 HESHAM.forEach(z=>terr[z]='hesham');
+JOHNNY.forEach(z=>terr[z]='johnny');
 
 const cats=[
 "Restaurants & Food",
@@ -368,13 +402,18 @@ let allBounds=null;
 
 function styleFor(z){
 
-  const isF=terr[z]==='felix';
+  const territory=terr[z];
+  const colors={
+    felix:{line:'#0b63c7',fill:'#1683e8'},
+    hesham:{line:'#b92727',fill:'#e05252'},
+    johnny:{line:'#10714e',fill:'#168a62'}
+  }[territory];
 
   return {
-    color:isF?'#0b63c7':'#b92727',
+    color:colors.line,
     weight:selected===z?4:1.5,
     opacity:1,
-    fillColor:isF?'#1683e8':'#e05252',
+    fillColor:colors.fill,
     fillOpacity:selected===z?.68:.40
   };
 
@@ -457,7 +496,7 @@ function buttons(){
 
       b.className=
         'zip '+
-        (terr[z]==='felix'?'fz':'hz')+
+        (terr[z]==='felix'?'fz':terr[z]==='hesham'?'hz':'jz')+
         (z===selected?' on':'');
 
       b.textContent=z;
@@ -478,10 +517,11 @@ function selectZip(z){
   buttons();
   refreshStyles();
 
-  const tr=
-    terr[z]==='felix'
-      ?'Felix Territory'
-      :'Hesham';
+  const tr={
+    felix:'Felix Territory',
+    hesham:'Hesham',
+    johnny:'Johnny Territory'
+  }[terr[z]];
 
   document.getElementById('info').innerHTML=
 
@@ -1015,6 +1055,13 @@ function renderLeads(){
       r=>r.territory==='Hesham'
     ).length;
 
+  document.getElementById(
+    'leadJohnny'
+  ).textContent=
+    leads.filter(
+      r=>r.territory==='Johnny'
+    ).length;
+
 
   document.getElementById(
     'leadCount'
@@ -1123,7 +1170,9 @@ function renderLeads(){
               (
                 r.territory==='Felix'
                   ?'leadFelix'
-                  :'leadHesham'
+                  :r.territory==='Hesham'
+                  ?'leadHesham'
+                  :'leadJohnny'
               )+
             '">'+
               esc(r.territory)+
