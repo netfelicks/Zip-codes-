@@ -38,6 +38,12 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
 .leadBtns{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
 .leadBtn{padding:8px 10px;border:1px solid #d8dde3;border-radius:9px;background:#fff;color:#172033;font-weight:700;font-size:12px;text-decoration:none;cursor:pointer}
 .leadBtn.active{background:#111827;color:#fff;border-color:#111827}
+.repBar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:9px}
+.repBar label{font-size:12px;font-weight:800;color:#344054}
+.repBar select{width:auto;min-width:120px;margin:0;padding:8px 10px;font-size:12px}
+.authBar{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin-top:9px;padding-top:9px;border-top:1px solid #eaecf0}
+.authBar input{width:190px;margin:0;padding:8px 10px;font-size:12px}
+.authStatus{font-size:12px;color:#475467;font-weight:700;margin-right:2px}
 #leadMap{height:390px;border-radius:14px;overflow:hidden;margin-bottom:10px}
 .leadList{display:grid;gap:10px}
 .leadCard{background:#fff;border:1px solid #e2e5e9;border-radius:14px;padding:13px}
@@ -201,6 +207,28 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
 
   <div class="leadControls">
 
+    <div class="repBar">
+      <label for="activeRep">Working as</label>
+      <select id="activeRep" aria-label="Choose the person logging lead activity">
+        <option>Felix</option>
+        <option>Hesham</option>
+        <option>Johnny</option>
+      </select>
+      <a class="leadBtn" target="_blank" rel="noopener" href="https://github.com/netfelicks/Zip-codes-/actions/workflows/sync-leads.yml">
+        ↻ Sync New Leads
+      </a>
+    </div>
+
+    <div class="authBar">
+      <span id="authStatus" class="authStatus">Shared activity: loading…</span>
+      <input id="authEmail" type="email" autocomplete="email" placeholder="Your email">
+      <input id="authPassword" type="password" autocomplete="current-password" placeholder="Password (6+ characters)">
+      <button id="signInButton" class="leadBtn">Sign in</button>
+      <button id="signUpButton" class="leadBtn">Create account</button>
+      <button id="importActivityButton" class="leadBtn" hidden>Upload this browser's activity</button>
+      <button id="signOutButton" class="leadBtn" hidden>Sign out</button>
+    </div>
+
     <input
       id="leadSearch"
       class="leadSearch"
@@ -294,7 +322,7 @@ input,select{width:100%;padding:11px;border:1px solid #cfd5dc;border-radius:10px
 
   <div class="leadNote">
     📍 Lead pins use the business address when possible.
-    Statuses, contact logs, and notes are saved in this browser so monthly lead imports do not erase your sales activity.
+    Choose the person logging activity above. Statuses, contact logs, and notes are saved in this browser so monthly lead imports do not erase your sales activity.
   </div>
 
 
@@ -639,15 +667,35 @@ let leadMapReady=false;
 
 
 const ACT_KEY='felixLeadActivityV1';
+const REP_KEY='felixLeadActiveRepV1';
+
+
+function activeRep(){
+
+  return localStorage.getItem(REP_KEY)||'Felix';
+
+}
+
+
+function setActiveRep(rep){
+
+  localStorage.setItem(REP_KEY,rep);
+  renderLeads();
+
+}
 
 
 function activity(){
 
   try{
 
-    return JSON.parse(
+    const local=JSON.parse(
       localStorage.getItem(ACT_KEY)||'{}'
     );
+    return {
+      ...local,
+      ...(window.sharedLeadActivity||{})
+    };
 
   }catch(e){
 
@@ -658,12 +706,28 @@ function activity(){
 }
 
 
-function saveActivity(a){
+function saveActivity(a,k){
 
   localStorage.setItem(
     ACT_KEY,
     JSON.stringify(a)
   );
+
+  if(k&&a[k]){
+    window.sharedLeadActivity={
+      ...(window.sharedLeadActivity||{}),
+      [k]:a[k]
+    };
+    window.saveSharedLeadActivity?.(k,a[k]);
+  }
+
+}
+
+
+function activityAuthor(){
+
+  const email=window.currentLeadUser?.email;
+  return email?activeRep()+' · '+email:activeRep();
 
 }
 
@@ -720,10 +784,11 @@ function setStatus(r,status){
   x.status=status;
   x.statusChanged=
     new Date().toISOString();
+  x.statusChangedBy=activityAuthor();
 
   a[k]=x;
 
-  saveActivity(a);
+  saveActivity(a,k);
 
   renderLeads();
 
@@ -740,17 +805,19 @@ function logContact(r){
 
   x.lastContact=
     new Date().toISOString();
+  x.lastContactBy=activityAuthor();
 
   x.notes=x.notes||[];
 
   x.notes.push({
     time:x.lastContact,
-    text:'Contact logged'
+    text:'Contact logged',
+    by:activityAuthor()
   });
 
   a[k]=x;
 
-  saveActivity(a);
+  saveActivity(a,k);
 
   renderLeads();
 
@@ -779,12 +846,13 @@ function addNote(r){
 
   x.notes.push({
     time:new Date().toISOString(),
-    text:input.value.trim()
+    text:input.value.trim(),
+    by:activityAuthor()
   });
 
   a[k]=x;
 
-  saveActivity(a);
+  saveActivity(a,k);
 
   renderLeads();
 
@@ -810,9 +878,9 @@ function saveLeadEmail(r){
   const x=getAct(r);
   x.email=email;
   x.notes=x.notes||[];
-  x.notes.push({time:new Date().toISOString(),text:'Business email saved'});
+  x.notes.push({time:new Date().toISOString(),text:'Business email saved',by:activityAuthor()});
   a[k]=x;
-  saveActivity(a);
+  saveActivity(a,k);
   renderLeads();
 
 }
@@ -1118,6 +1186,7 @@ function renderLeads(){
             .map(n=>
               '<div>• '+
               esc(n.text)+
+              (n.by?' <b>— '+esc(n.by)+'</b>':'')+
               ' <span>('+
               esc(fmtDate(n.time))+
               ')</span></div>'
@@ -1249,6 +1318,7 @@ function renderLeads(){
 
             '<b>Lead status:</b> '+
             esc(st)+
+            (a.statusChangedBy?' — '+esc(a.statusChangedBy):'')+
 
             '<br>'+
 
@@ -1261,7 +1331,8 @@ function renderLeads(){
             (
               a.lastContact
                 ?' • Last contact '+
-                  esc(fmtDate(a.lastContact))
+                  esc(fmtDate(a.lastContact))+
+                  (a.lastContactBy?' by '+esc(a.lastContactBy):'')
                 :''
             )+
 
@@ -1476,6 +1547,11 @@ document.getElementById(
 ).oninput=renderLeads;
 
 
+const repSelect=document.getElementById('activeRep');
+repSelect.value=activeRep();
+repSelect.onchange=()=>setActiveRep(repSelect.value);
+
+
 document.querySelectorAll(
   '[data-lead-ter]'
 ).forEach(b=>{
@@ -1553,6 +1629,9 @@ document.querySelectorAll(
 });
 
 
+window.onSharedLeadActivity=()=>renderLeads();
+
+
 fetch(
   'data/leads.json?ts='+
   Date.now()
@@ -1600,6 +1679,137 @@ fetch(
 
 });
 
+</script>
+
+<script type="module">
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js';
+import {
+  createUserWithEmailAndPassword,
+  getAuth,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signOut
+} from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js';
+import {
+  collection,
+  doc,
+  getFirestore,
+  onSnapshot,
+  setDoc
+} from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore.js';
+
+const firebaseConfig={
+  apiKey:'AIzaSyAAzVLtRDKFps_bhJb1tcD49Cxtr6BdSFU',
+  authDomain:'territory-b5263.firebaseapp.com',
+  projectId:'territory-b5263',
+  storageBucket:'territory-b5263.firebasestorage.app',
+  messagingSenderId:'721896125244',
+  appId:'1:721896125244:web:b25d7ba0caa60edee66439',
+  measurementId:'G-PSYELCGKNL'
+};
+
+const app=initializeApp(firebaseConfig);
+const auth=getAuth(app);
+const db=getFirestore(app);
+const status=document.getElementById('authStatus');
+const email=document.getElementById('authEmail');
+const password=document.getElementById('authPassword');
+const signInButton=document.getElementById('signInButton');
+const signUpButton=document.getElementById('signUpButton');
+const importActivityButton=document.getElementById('importActivityButton');
+const signOutButton=document.getElementById('signOutButton');
+let stopListening=null;
+
+function setStatus(message){ status.textContent=message; }
+function clean(value){ return JSON.parse(JSON.stringify(value)); }
+function showSignedIn(user){
+  setStatus('Shared activity: '+user.email);
+  email.hidden=true;
+  password.hidden=true;
+  signInButton.hidden=true;
+  signUpButton.hidden=true;
+  importActivityButton.hidden=false;
+  signOutButton.hidden=false;
+}
+function showSignedOut(){
+  setStatus('Sign in to share activity');
+  email.hidden=false;
+  password.hidden=false;
+  signInButton.hidden=false;
+  signUpButton.hidden=false;
+  importActivityButton.hidden=true;
+  signOutButton.hidden=true;
+}
+function friendlyError(error){
+  if(error.code==='auth/email-already-in-use')return 'That email already has an account. Sign in instead.';
+  if(error.code==='auth/invalid-credential')return 'Email or password is incorrect.';
+  if(error.code==='auth/weak-password')return 'Use a password with at least 6 characters.';
+  return error.message||'Please try again.';
+}
+
+window.saveSharedLeadActivity=async(leadKey,value)=>{
+  if(!auth.currentUser)return;
+  try{
+    await setDoc(doc(db,'leadActivity',encodeURIComponent(leadKey)),{
+      ...clean(value),
+      leadKey,
+      updatedAt:new Date().toISOString()
+    });
+  }catch(error){
+    setStatus('Could not save shared activity: '+friendlyError(error));
+  }
+};
+
+signUpButton.onclick=async()=>{
+  try{
+    await createUserWithEmailAndPassword(auth,email.value.trim(),password.value);
+  }catch(error){ setStatus(friendlyError(error)); }
+};
+signInButton.onclick=async()=>{
+  try{
+    await signInWithEmailAndPassword(auth,email.value.trim(),password.value);
+  }catch(error){ setStatus(friendlyError(error)); }
+};
+signOutButton.onclick=()=>signOut(auth);
+importActivityButton.onclick=async()=>{
+  const local=JSON.parse(localStorage.getItem('felixLeadActivityV1')||'{}');
+  const entries=Object.entries(local);
+  if(!entries.length){ setStatus('There is no older browser activity to upload.'); return; }
+  try{
+    await Promise.all(entries.map(([leadKey,value])=>setDoc(
+      doc(db,'leadActivity',encodeURIComponent(leadKey)),
+      {...clean(value),leadKey,updatedAt:new Date().toISOString()}
+    )));
+    setStatus('Uploaded '+entries.length+' activity record'+(entries.length===1?'':'s')+'.');
+  }catch(error){ setStatus('Could not upload activity: '+friendlyError(error)); }
+};
+
+onAuthStateChanged(auth,user=>{
+  stopListening?.();
+  stopListening=null;
+  if(!user){
+    window.currentLeadUser=null;
+    window.sharedLeadActivity={};
+    showSignedOut();
+    window.onSharedLeadActivity?.();
+    return;
+  }
+  window.currentLeadUser={email:user.email};
+  showSignedIn(user);
+  stopListening=onSnapshot(collection(db,'leadActivity'),snapshot=>{
+    const shared={};
+    snapshot.forEach(item=>{
+      const value=item.data();
+      if(value.leadKey){
+        delete value.leadKey;
+        delete value.updatedAt;
+        shared[item.data().leadKey]=value;
+      }
+    });
+    window.sharedLeadActivity=shared;
+    window.onSharedLeadActivity?.();
+  },error=>setStatus('Could not load shared activity: '+friendlyError(error)));
+});
 </script>
 
 </body>
