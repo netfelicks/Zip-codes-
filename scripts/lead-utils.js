@@ -45,6 +45,22 @@ export function dateToIso(value = '') {
   return `${match[3]}-${match[1].padStart(2, '0')}-${match[2].padStart(2, '0')}`;
 }
 
+// The public city directories return simple HTML tables rather than CSV files.
+// Keep this parser small and shared so each source is tested the same way.
+export function parseHtmlTableRows(html, expectedColumns) {
+  const text = value => String(value)
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return [...String(html).matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)].map(match =>
+    [...match[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map(cell => text(cell[1]))
+  ).filter(row => row.length === expectedColumns);
+}
+
 export function leadFromAddress({ source, accountKey, name, fullAddress, start = '' }) {
   const [address = '', ...location] = String(fullAddress).split(/,\s*/);
   const address2 = location.join(', ');
