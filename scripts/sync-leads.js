@@ -27,21 +27,31 @@ async function downloadFresnoCsv(page) {
   return readFile(await download.path(), 'utf8');
 }
 
-async function scrapeClovis(page) {
+function htmlText(value) {
+  return value.replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
+}
+
+function clovisRows(html) {
+  return [...html.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)].map(match =>
+    [...match[1].matchAll(/<td[^>]*>([\s\S]*?)<\/td>/gi)].map(cell => htmlText(cell[1]))
+  ).filter(row => row.length === 5);
+}
+
+async function scrapeClovis() {
   const { year: y, month: m } = pacificParts(now);
   const lastDay = new Date(Number(y), Number(m), 0).getDate();
   const from = `${m}/01/${y}`;
   const to = `${m}/${String(lastDay).padStart(2, '0')}/${y}`;
-  await page.goto(CLOVIS_URL, { waitUntil: 'networkidle', timeout: 60000 });
-  await page.locator('#FromDate').evaluate((field, values) => {
-    field.value = values.from;
-    document.querySelector('#ToDate').value = values.to;
-  }, { from, to });
-  await page.locator('#searchByType').click();
-  await page.waitForSelector('table tr:nth-child(2)', { timeout: 60000 });
-  const rows = await page.locator('table tr').evaluateAll(trs => trs.slice(1).map(tr =>
-    Array.from(tr.querySelectorAll('td'), td => td.textContent.trim())
-  ));
+  const body = new URLSearchParams({
+    SelectedSearchType: 'Business Name', SearchString: '', FromDate: from, ToDate: to,
+    BusinessTypeId: '0', CustomFieldId: '0', IsYesNo: 'False', hiddenListVal: '', submitButton: 'Search'
+  });
+  const response = await fetch(`${CLOVIS_URL}SearchBy`, {
+    method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body
+  });
+  if (!response.ok) throw new Error(`Clovis returned HTTP ${response.status}`);
+  const rows = clovisRows(await response.text());
+  if (!rows.length) throw new Error('Clovis returned no business-search rows');
   return rows.map(([accountKey, name, start, , fullAddress]) => leadFromAddress({
     source: 'Clovis', accountKey, name, fullAddress, start
   })).filter(Boolean);
@@ -53,7 +63,7 @@ let clovisError = null;
 try {
   const page = await browser.newPage();
   const csv = await downloadFresnoCsv(page);
-  clovisLeads = await scrapeClovis(page).catch(error => {
+  clovisLeads = await scrapeClovis().catch(error => {
     clovisError = error.message;
     return [];
   });
