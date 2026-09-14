@@ -861,8 +861,7 @@ function renderLeads(){
 
         const a=getAct(r);
 
-        return
-
+        return (
           (leadTerr==='All'||
            r.territory===leadTerr)
 
@@ -894,7 +893,8 @@ function renderLeads(){
           (
             statusFilter==='All'||
             a.status===statusFilter
-          );
+          )
+        );
 
       })
 
