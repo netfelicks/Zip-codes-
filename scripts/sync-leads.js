@@ -72,7 +72,15 @@ try {
   await browser.close();
 }
 
-const leads = [...fresnoLeads, ...clovisLeads].sort((a, b) =>
+let previousClovisLeads = [];
+try {
+  const previous = JSON.parse(await readFile(output, 'utf8'));
+  previousClovisLeads = (previous.leads || []).filter(lead => lead.source === 'Clovis');
+} catch {
+  // First run: there is no prior local-source data to preserve.
+}
+const effectiveClovisLeads = clovisError ? previousClovisLeads : clovisLeads;
+const leads = [...fresnoLeads, ...effectiveClovisLeads].sort((a, b) =>
   (b.start || '').localeCompare(a.start || '') || a.name.localeCompare(b.name)
 );
 await mkdir(join(root, 'data'), { recursive: true });
@@ -83,4 +91,4 @@ await writeFile(output, `${JSON.stringify({
   month: `${month} ${year}`,
   leads
 }, null, 2)}\n`);
-console.log(`Wrote ${leads.length} territory leads for ${month} ${year} (${clovisLeads.length} from Clovis).`);
+console.log(`Wrote ${leads.length} territory leads for ${month} ${year} (${effectiveClovisLeads.length} from Clovis).`);
