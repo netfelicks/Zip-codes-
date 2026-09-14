@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "sync-leads": "node scripts/sync-leads.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.0"
+  }
+}
