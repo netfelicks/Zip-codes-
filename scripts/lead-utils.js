@@ -46,6 +46,7 @@ export function leadFromAddress({ source, accountKey, name, fullAddress, start =
     territory,
     business_type: '',
     contact: '',
+    email: '',
     phone: '',
     start: dateToIso(start),
     status: ''
@@ -95,6 +96,7 @@ export function toLead(record) {
     territory,
     business_type: value(record, 'BUSINESS_TYPE', 'BUSINESS_CATEGORY', 'TYPE', 'CATEGORY'),
     contact: value(record, 'CONTACT', 'CONTACT_NAME', 'OWNER_NAME'),
+    email: value(record, 'EMAIL', 'EMAIL_ADDRESS', 'BUSINESS_EMAIL'),
     phone: value(record, 'PHONE', 'PHONE_NUMBER', 'TELEPHONE'),
     start: dateToIso(start),
     status: value(record, 'STATUS')

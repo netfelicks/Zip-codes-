@@ -19,7 +19,7 @@ test('parses quoted CSV and builds a lead using ADDRESS2', () => {
   assert.deepEqual(toLead(record), {
     account_key: 'ACME, LLC|123 Main|93727', source: 'Fresno', name: 'ACME, LLC', address: '123 Main',
     address2: 'FRESNO CA 93727-5260', zip: '93727', territory: 'Hesham',
-    business_type: '', contact: '', phone: '555-0100', start: '', status: ''
+    business_type: '', contact: '', email: '', phone: '555-0100', start: '', status: ''
   });
 });
 
@@ -30,7 +30,7 @@ test('builds a territory lead from a public directory address', () => {
   }), {
     account_key: 'Clovis:BL1', source: 'Clovis', name: 'Example', address: '1048 BARSTOW AVE',
     address2: 'CLOVIS, CA 93612-1901', zip: '93612', territory: 'Hesham',
-    business_type: '', contact: '', phone: '', start: '2026-09-01', status: ''
+    business_type: '', contact: '', email: '', phone: '', start: '2026-09-01', status: ''
   });
   assert.equal(dateToIso('9/1/2026'), '2026-09-01');
 });

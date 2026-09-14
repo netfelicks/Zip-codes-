@@ -15,7 +15,7 @@ test('parses a territory FBN notice without using the registrant address', () =>
   assert.deepEqual(lead, {
     account_key: 'Fresno FBN:2202610003617', source: 'Fresno FBN', name: 'Rapid Urgent Care and Clinic',
     address: '2151 Herndon Avenue', address2: 'Suite 102, Clovis, CA, 93611', zip: '93611', territory: 'Hesham',
-    business_type: 'A Corporation', contact: 'Rapid Urgent Care, 2151 Herndon Ave, Ste 102, Clovis, CA 93611.',
+    business_type: 'A Corporation', contact: 'Rapid Urgent Care, 2151 Herndon Ave, Ste 102, Clovis, CA 93611.', email: '',
     phone: '', start: '2026-08-04', status: ''
   });
 });

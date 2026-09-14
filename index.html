@@ -729,6 +729,33 @@ function addNote(r){
 }
 
 
+function saveLeadEmail(r){
+
+  if(!r)return;
+
+  const input=document.getElementById(
+    'email-'+CSS.escape(key(r))
+  );
+  const email=(input?.value||'').trim();
+
+  if(!email||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    alert('Enter a valid business email address.');
+    return;
+  }
+
+  const a=activity();
+  const k=key(r);
+  const x=getAct(r);
+  x.email=email;
+  x.notes=x.notes||[];
+  x.notes.push({time:new Date().toISOString(),text:'Business email saved'});
+  a[k]=x;
+  saveActivity(a);
+  renderLeads();
+
+}
+
+
 function fmtDate(s){
 
   if(!s)return '—';
@@ -875,7 +902,8 @@ function renderLeads(){
               r.address2+' '+
               r.zip+' '+
               r.business_type+' '+
-              r.contact
+              r.contact+' '+
+              (a.email||r.email||'')
             )
             .toLowerCase()
             .includes(term)
@@ -952,6 +980,7 @@ function renderLeads(){
       rows.map(r=>{
 
         const a=getAct(r);
+        const leadEmail=a.email||r.email||'';
 
         const notes=
           (a.notes||[])
@@ -1058,6 +1087,16 @@ function renderLeads(){
             esc(r.contact||'—')+
             '<br>'+
 
+            '<b>Email:</b> '+
+            (
+              leadEmail
+                ?'<a href="mailto:'+esc(leadEmail)+'">'+
+                  esc(leadEmail)+
+                  '</a>'
+                :'—'
+            )+
+            '<br>'+
+
             '<b>Phone:</b> '+
             (
               r.phone
@@ -1110,6 +1149,12 @@ function renderLeads(){
                 :''
             )+
 
+            (
+              leadEmail
+                ?'<a class="emailLead" href="mailto:'+esc(leadEmail)+'">✉ Email</a>'
+                :''
+            )+
+
             '<button class="contactLead" onclick="logContact('+
               'leads.find(x=>key(x)===\''+
               sameKey+
@@ -1119,6 +1164,22 @@ function renderLeads(){
           '</div>'+
 
           '<div class="noteBox">'+
+
+            '<input id="email-'+
+              esc(key(r))+
+              '" class="noteInput" type="email" '+
+              'placeholder="Paste verified business email…" '+
+              'value="'+esc(leadEmail)+'">'+
+
+            '<button class="leadBtn" '+
+              'style="margin-top:6px" '+
+              'onclick="saveLeadEmail('+
+                'leads.find(x=>key(x)===\''+
+                sameKey+
+                '\')'+
+              ')">'+
+              '✉ Save Email'+
+            '</button>'+
 
             '<input id="note-'+
               esc(key(r))+
