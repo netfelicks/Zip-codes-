@@ -1,11 +1,11 @@
 {
-  "updated": "2026-09-14T03:40:27.759Z",
+  "updated": "2026-09-14T03:45:10.554Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Clovis": "https://businesslicense.cityofclovis.com/Search/"
   },
   "warnings": [
-    "Clovis import skipped: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('a[href=\"#\"]')\n"
+    "Clovis import skipped: locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#FromDate')\n"
   ],
   "month": "September 2026",
   "leads": [
