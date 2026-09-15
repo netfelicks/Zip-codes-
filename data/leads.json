@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-14T19:13:48.179Z",
+  "updated": "2026-09-15T16:24:51.887Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -11,6 +11,21 @@
   ],
   "month": "September 2026",
   "leads": [
+    {
+      "account_key": "Modesto:1315135",
+      "source": "Modesto",
+      "name": "KERRY GARCIA",
+      "address": "3461 MERLE AVE",
+      "address2": "MODESTO, CA 95355-9703",
+      "zip": "95355",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-15",
+      "status": ""
+    },
     {
       "account_key": "Modesto:1314969",
       "source": "Modesto",
@@ -117,6 +132,21 @@
       "status": ""
     },
     {
+      "account_key": "Modesto:1315107",
+      "source": "Modesto",
+      "name": "CLAYTON MASSAGE & BODYWORK",
+      "address": "1012 CARVER RD",
+      "address2": "MODESTO, CA 95350-4732",
+      "zip": "95350",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-01",
+      "status": ""
+    },
+    {
       "account_key": "Modesto:1315073",
       "source": "Modesto",
       "name": "DEVINE AUTO SALES LLC (RETAIL)",
@@ -162,12 +192,42 @@
       "status": ""
     },
     {
+      "account_key": "Modesto:1314953",
+      "source": "Modesto",
+      "name": "HAPPY FOOT MASSAGE",
+      "address": "118 W ORANGEBURG AVE",
+      "address2": "MODESTO, CA 95350-4428",
+      "zip": "95350",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-01",
+      "status": ""
+    },
+    {
       "account_key": "Modesto:1315048",
       "source": "Modesto",
       "name": "INNERBEAUTYXJAZ",
       "address": "621 13TH ST #K",
       "address2": "MODESTO, CA 95354-2449",
       "zip": "95354",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-01",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315070",
+      "source": "Modesto",
+      "name": "JACK HERNANDEZ @ CHIROPRACTIC HEALTH CENTER",
+      "address": "1012 CARVER RD",
+      "address2": "MODESTO, CA 95350-4732",
+      "zip": "95350",
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
@@ -1032,6 +1092,21 @@
       "status": ""
     },
     {
+      "account_key": "470889",
+      "source": "Fresno",
+      "name": "LALO WEARHOUSE FURNITURE",
+      "address": "501 N VAN NESS AVE # 101",
+      "address2": "FRESNO CA 93728-3419",
+      "zip": "93728",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "EDUARDO ELIAS SERRANO",
+      "email": "",
+      "phone": "(559)720-5150",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470739",
       "source": "Fresno",
       "name": "LOVE THE CAPTIVE",
@@ -1103,6 +1178,21 @@
       "contact": "RICARDO ESPAIN",
       "email": "",
       "phone": "(559)307-9136",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "470884",
+      "source": "Fresno",
+      "name": "MORALES FOOD",
+      "address": "504 E BELMONT AVE",
+      "address2": "FRESNO CA 93701-1409",
+      "zip": "93701",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "MIGUEL ANGEL GUARCHAJ SAQUIC",
+      "email": "",
+      "phone": "(323)981-3511",
       "start": "",
       "status": ""
     },
@@ -1551,6 +1641,21 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "VICTOR VELASQUEZ HERNANDEZ",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "470886",
+      "source": "Fresno",
+      "name": "VINCES SPRINKER SERVICE",
+      "address": "429 N MARION AVE",
+      "address2": "FRESNO CA 93727-3432",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "VINCENT FARMER",
       "email": "",
       "phone": "",
       "start": "",
