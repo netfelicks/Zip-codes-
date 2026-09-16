@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-15T16:24:51.887Z",
+  "updated": "2026-09-16T16:24:44.570Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -852,6 +852,21 @@
       "status": ""
     },
     {
+      "account_key": "470901",
+      "source": "Fresno",
+      "name": "F N R",
+      "address": "1121 N GARFIELD AVE",
+      "address2": "FRESNO CA 93723-9222",
+      "zip": "93723",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "FERNANDO NAVA RODRIGUEZ",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470877",
       "source": "Fresno",
       "name": "FELIX'S JUNK REMOVAL",
@@ -908,6 +923,21 @@
       "contact": "JESUS SALAS EVIA",
       "email": "",
       "phone": "(559)371-8336",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "470900",
+      "source": "Fresno",
+      "name": "G N R PRODUCTS",
+      "address": "5812 E MONO ST",
+      "address2": "FRESNO CA 93727-5555",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "RUSSELL COWGER/GRIFFIN GOSTANIAN",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
