@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-16T16:24:44.570Z",
+  "updated": "2026-09-17T16:24:54.223Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -852,6 +852,21 @@
       "status": ""
     },
     {
+      "account_key": "470917",
+      "source": "Fresno",
+      "name": "EXTREME CAR ACCESSORIES",
+      "address": "3620 E VENTURA ST",
+      "address2": "FRESNO CA 93702-3252",
+      "zip": "93702",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "JOSE LUS ESPINOZA BALDERAS",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470901",
       "source": "Fresno",
       "name": "F N R",
@@ -1152,6 +1167,21 @@
       "status": ""
     },
     {
+      "account_key": "470918",
+      "source": "Fresno",
+      "name": "LUXE & SIP INC",
+      "address": "1428 W ASHLAN AVE",
+      "address2": "FRESNO CA 93705-1902",
+      "zip": "93705",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "LUXE & SIP INC",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470529",
       "source": "Fresno",
       "name": "LUXE STRAND HAIR COLLECTION AND HAIR LOSS SOLUTIONS LLC",
@@ -1362,6 +1392,21 @@
       "status": ""
     },
     {
+      "account_key": "470906",
+      "source": "Fresno",
+      "name": "PRESTIGE EVENT STAFFING",
+      "address": "5735 E BECK AVE APT 111",
+      "address2": "FRESNO CA 93727-4342",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "AUGUSTO OLDAIR FLORES",
+      "email": "",
+      "phone": "(559)200-8533",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470805",
       "source": "Fresno",
       "name": "PURE SHINE EXTERIOR CLEANING",
@@ -1497,6 +1542,21 @@
       "status": ""
     },
     {
+      "account_key": "470909",
+      "source": "Fresno",
+      "name": "RUNAVIX LLC",
+      "address": "1728 E BARSTOW AVE APT 103",
+      "address2": "FRESNO CA 93710-6553",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "DARPAN ATTRI",
+      "email": "",
+      "phone": "(559)680-5986",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470249",
       "source": "Fresno",
       "name": "S.I.G.M. APPAREL AND CONVENIENCE",
@@ -1568,6 +1628,21 @@
       "contact": "SWETHA NADIPALLY",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "470907",
+      "source": "Fresno",
+      "name": "TACOS EL CHAPPARITO",
+      "address": "3628 E BUTLER AVE",
+      "address2": "FRESNO CA 93702-4303",
+      "zip": "93702",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "CLARITA CORTES-FLORES",
+      "email": "",
+      "phone": "(559)907-0551",
       "start": "",
       "status": ""
     },
