@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-17T16:24:54.223Z",
+  "updated": "2026-09-18T16:22:50.324Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -11,6 +11,21 @@
   ],
   "month": "September 2026",
   "leads": [
+    {
+      "account_key": "Fresno FBN:2202610004253",
+      "source": "Fresno FBN",
+      "name": "JONES HOME  JONES HOME 2",
+      "address": "5389 E LOWE AVE",
+      "address2": "FRESNO, CA 93727",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "a married couple",
+      "contact": "ROBERT GERALD JONES JR, 5389 E LOWE AVE FRESNO CA 93727  SHONDA LATRICE JONES, 5389 E LOWE AVE FRESNO CA 93727 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-16",
+      "status": ""
+    },
     {
       "account_key": "Modesto:1315135",
       "source": "Modesto",
@@ -39,6 +54,21 @@
       "email": "",
       "phone": "",
       "start": "2026-09-14",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315166",
+      "source": "Modesto",
+      "name": "MAZE LAUNDRY EXPRESS",
+      "address": "101 MAZE BLVD #4",
+      "address2": "MODESTO, CA 95351-2644",
+      "zip": "95351",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-10",
       "status": ""
     },
     {
@@ -273,6 +303,21 @@
       "address": "2704 COFFEE RD #A",
       "address2": "MODESTO, CA 95355-1712",
       "zip": "95355",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-01",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315155",
+      "source": "Modesto",
+      "name": "SILVA EMPLOYMENT LAW",
+      "address": "515 13TH ST #202",
+      "address2": "MODESTO, CA 95354-2437",
+      "zip": "95354",
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
@@ -951,6 +996,21 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "RUSSELL COWGER/GRIFFIN GOSTANIAN",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "470926",
+      "source": "Fresno",
+      "name": "GALAXY FRESNO",
+      "address": "3090 E CAMPUS POINTE DR",
+      "address2": "FRESNO CA 93710-7526",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "GALAXY THEATRES LLC",
       "email": "",
       "phone": "",
       "start": "",
@@ -1688,6 +1748,21 @@
       "contact": "NANCY MCCART/ZACH HATCHER",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "470920",
+      "source": "Fresno",
+      "name": "TRASH MONKEY LLC",
+      "address": "3707 W OLIVE AVE",
+      "address2": "FRESNO CA 93722-5744",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "THOMAS MURRAY",
+      "email": "",
+      "phone": "(559)905-6788",
       "start": "",
       "status": ""
     },
