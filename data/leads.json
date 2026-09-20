@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18T16:22:50.324Z",
+  "updated": "2026-09-20T16:23:18.947Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -957,6 +957,21 @@
       "status": ""
     },
     {
+      "account_key": "470934",
+      "source": "Fresno",
+      "name": "FOUR WOOF CLOVER",
+      "address": "8885 N CHESTNUT AVE",
+      "address2": "FRESNO CA 93720-5367",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "KAYLEIGH HUNT",
+      "email": "",
+      "phone": "(559)680-3593",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470748",
       "source": "Fresno",
       "name": "FRESH AIR REPAIRS",
@@ -1283,6 +1298,21 @@
       "contact": "DAVID SANCHEZ & MAYCE SANCHEZ",
       "email": "",
       "phone": "(559)960-6285",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "470916",
+      "source": "Fresno",
+      "name": "MATTHEW MOORHEAD THERAPY",
+      "address": "1616 W SHAW AVE STE D1",
+      "address2": "FRESNO CA 93711-3513",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MATTHEW MOORHEAD",
+      "email": "",
+      "phone": "(559)667-1076",
       "start": "",
       "status": ""
     },
