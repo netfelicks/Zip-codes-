@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-20T16:23:18.947Z",
+  "updated": "2026-09-21T16:24:54.839Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -81,6 +81,21 @@
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-09",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004169",
+      "source": "Fresno FBN",
+      "name": "Northstar Temp Control",
+      "address": "3247 E. ANNADALE AVENUE FRESNO",
+      "address2": "CA 93725",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "a corporation",
+      "contact": "THERMO KING FRESNO, INC. , 3247 E. ANNADALE AVENUE FRESNO CA 93725",
       "email": "",
       "phone": "",
       "start": "2026-09-09",
@@ -788,6 +803,21 @@
       "contact": "CINDY RODRIGUEZ",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "470664",
+      "source": "Fresno",
+      "name": "COMMUNITY PERIOPERATIVE ASSESSMENT CLINIC",
+      "address": "45 E RIVER PARK PL W STE 104",
+      "address2": "FRESNO CA 93720-1565",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MARTHA ABUNDIS",
+      "email": "",
+      "phone": "(559)324-4001",
       "start": "",
       "status": ""
     },
