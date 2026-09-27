@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25T16:25:57.370Z",
+  "updated": "2026-09-27T16:24:09.822Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -804,6 +804,21 @@
       "contact": "JESSE YANG",
       "email": "",
       "phone": "(559)776-7291",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471008",
+      "source": "Fresno",
+      "name": "ELAINE'S CLEANING SERVICES",
+      "address": "5360 W ROBERTS AVE",
+      "address2": "FRESNO CA 93722-7736",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "ELIANE ZERMENO",
+      "email": "",
+      "phone": "(559)394-1098",
       "start": "",
       "status": ""
     },
@@ -1777,6 +1792,21 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "MOISES OROPEZA ALVA",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471005",
+      "source": "Fresno",
+      "name": "TB NAIL SPA",
+      "address": "6650 N BLACKSTONE AVE STE 106",
+      "address2": "FRESNO CA 93710-3511",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "UH FRESNO, INC",
       "email": "",
       "phone": "",
       "start": "",
