@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28T16:28:39.327Z",
+  "updated": "2026-09-29T16:28:38.433Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -2241,21 +2241,6 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "TELLEZ TOWING LLC",
-      "email": "",
-      "phone": "",
-      "start": "",
-      "status": ""
-    },
-    {
-      "account_key": "470583",
-      "source": "Fresno",
-      "name": "THE GOLD STANDARD",
-      "address": "140 VAN NESS AVE",
-      "address2": "FRESNO CA 93721-3119",
-      "zip": "93721",
-      "territory": "Felix",
-      "business_type": "",
-      "contact": "NANCY MCCART/ZACH HATCHER",
       "email": "",
       "phone": "",
       "start": "",
