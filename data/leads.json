@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-29T16:28:38.433Z",
+  "updated": "2026-09-30T16:29:32.402Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -1062,6 +1062,21 @@
       "status": ""
     },
     {
+      "account_key": "471047",
+      "source": "Fresno",
+      "name": "BLANCA CABRALES VAUGHAN",
+      "address": "8050 N PALM AVE STE 110",
+      "address2": "FRESNO CA 93711-5510",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "ILLIANA SANCHEZ",
+      "email": "",
+      "phone": "(323)389-7515",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470974",
       "source": "Fresno",
       "name": "BLONDES BY ERICA",
@@ -1163,6 +1178,21 @@
       "contact": "BOBBIE REYES",
       "email": "",
       "phone": "(602)229-6312",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471031",
+      "source": "Fresno",
+      "name": "CYAN SEWS",
+      "address": "3280 W MESA AVE",
+      "address2": "FRESNO CA 93711-1697",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "CYAN EDMISTEN",
+      "email": "",
+      "phone": "(559)917-4786",
       "start": "",
       "status": ""
     },
@@ -1467,6 +1497,21 @@
       "status": ""
     },
     {
+      "account_key": "470965",
+      "source": "Fresno",
+      "name": "GREATER CONNECTION CALIFORNIA, LLC",
+      "address": "6050 E PRINCETON AVE APT 119",
+      "address2": "FRESNO CA 93727-1475",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "NATHAN RAMIREZ",
+      "email": "",
+      "phone": "(209)407-7982",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470158",
       "source": "Fresno",
       "name": "HAPPY GOLF",
@@ -1523,6 +1568,21 @@
       "contact": "JAIRO M SANDOVAL",
       "email": "",
       "phone": "(559)480-0120",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471027",
+      "source": "Fresno",
+      "name": "JASKIRN JOHAL - DHILLON, LMFT",
+      "address": "1616 W SHAW AVE STE C1",
+      "address2": "FRESNO CA 93711-3513",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "JASKIRN JOHAL-DHILLON",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
@@ -1688,6 +1748,21 @@
       "contact": "MALEE VUE",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471028",
+      "source": "Fresno",
+      "name": "MARIANNA GARCIA, LMFT",
+      "address": "1616 W SHAW AVE STE C1",
+      "address2": "FRESNO CA 93711-3513",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MARIANNA GARCIA",
+      "email": "",
+      "phone": "(559)304-4115",
       "start": "",
       "status": ""
     },
@@ -2382,21 +2457,6 @@
       "status": ""
     },
     {
-      "account_key": "470886",
-      "source": "Fresno",
-      "name": "VINCES SPRINKER SERVICE",
-      "address": "429 N MARION AVE",
-      "address2": "FRESNO CA 93727-3432",
-      "zip": "93727",
-      "territory": "Hesham",
-      "business_type": "",
-      "contact": "VINCENT FARMER",
-      "email": "",
-      "phone": "",
-      "start": "",
-      "status": ""
-    },
-    {
       "account_key": "470975",
       "source": "Fresno",
       "name": "VITAL LITERACY PARTNERS",
@@ -2408,6 +2468,21 @@
       "contact": "SHAWNA VITAL",
       "email": "",
       "phone": "(559)779-6376",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471071",
+      "source": "Fresno",
+      "name": "VIVAN & CO",
+      "address": "4919 E TRUMAN AVE",
+      "address2": "FRESNO CA 93725-1365",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "LILIANA FLORES",
+      "email": "",
+      "phone": "(559)903-5751",
       "start": "",
       "status": ""
     },
