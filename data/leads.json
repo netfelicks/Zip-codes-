@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-05T22:36:14.684Z",
+  "updated": "2026-10-06T20:57:46.303Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -930,7 +930,7 @@
     {
       "account_key": "471142",
       "source": "Fresno",
-      "name": "MI RACHITOS FURNITURE AND MORE",
+      "name": "MI RANCHITOS FURNITURE AND MORE",
       "address": "4049 N BLACKSTONE AVE",
       "address2": "FRESNO CA 93726-3806",
       "zip": "93726",
