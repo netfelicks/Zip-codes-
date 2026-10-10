@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09T20:51:30.342Z",
+  "updated": "2026-10-10T20:02:58.899Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -11,6 +11,21 @@
   ],
   "month": "October 2026",
   "leads": [
+    {
+      "account_key": "Modesto:1315255",
+      "source": "Modesto",
+      "name": "AESTHETICALLY YOU",
+      "address": "571 TULLY RD",
+      "address2": "MODESTO, CA 95350-5853",
+      "zip": "95350",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-10",
+      "status": ""
+    },
     {
       "account_key": "Modesto:1315240",
       "source": "Modesto",
