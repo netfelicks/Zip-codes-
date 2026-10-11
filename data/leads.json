@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-10T20:02:58.899Z",
+  "updated": "2026-10-11T20:13:45.821Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -57,6 +57,36 @@
       "status": ""
     },
     {
+      "account_key": "Modesto:1315329",
+      "source": "Modesto",
+      "name": "CASA IMPERIAL",
+      "address": "623 H ST",
+      "address2": "MODESTO, CA 95354-3433",
+      "zip": "95354",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-01",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315331",
+      "source": "Modesto",
+      "name": "CASA ROBLES INVESTMENTS INC",
+      "address": "1230 13TH ST #A",
+      "address2": "MODESTO, CA 95354-0947",
+      "zip": "95354",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-01",
+      "status": ""
+    },
+    {
       "account_key": "Modesto:1315284",
       "source": "Modesto",
       "name": "FRESH MARKET",
@@ -93,6 +123,21 @@
       "address": "2401 E ORANGEBURG AVE #190",
       "address2": "MODESTO, CA 95355-3342",
       "zip": "95355",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-01",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315328",
+      "source": "Modesto",
+      "name": "SERENITY RESPITE & SUPPORTIVE CARE INC",
+      "address": "931 10TH ST",
+      "address2": "MODESTO, CA 95354-2305",
+      "zip": "95354",
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
