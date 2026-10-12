@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11T20:13:45.821Z",
+  "updated": "2026-10-12T22:55:57.282Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -192,6 +192,21 @@
       "status": ""
     },
     {
+      "account_key": "Fresno FBN:2202610004502",
+      "source": "Fresno FBN",
+      "name": "Specialty Herd Solutions",
+      "address": "4672 E. Drummond Ave.",
+      "address2": "Fresno, CA 93725",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "limited liability company",
+      "contact": "Specialty Sales, LLC, 7621 N. Del Mar Ave., Ste. 101 Fresno CA 93725.",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-29",
+      "status": ""
+    },
+    {
       "account_key": "Fresno FBN:2202610004320",
       "source": "Fresno FBN",
       "name": "ENZO'S TABLE BAKERY",
@@ -216,6 +231,21 @@
       "territory": "Hesham",
       "business_type": "a general partnership",
       "contact": "CAROLYN CHRISTINE DRAKE, 5378 E. BUTLER AVENUE, FRESNO CA 93727  STEPHANIE RENEE REITZ-ROBINSON, 5378 E. BUTLER AVENUE, FRESNO CA 93727  BRENDA STARKS, 5378 E. BUTLER AVENUE, FRESNO CA 93727 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-17",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004299",
+      "source": "Fresno FBN",
+      "name": "Lowe Audiology",
+      "address": "6101 N. Fresno Street",
+      "address2": "Suite 102 Fresno, CA 93710",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "an individual",
+      "contact": "Lowe Audiology Corporation, 6101 N. Fresno Street, Suite 102 Fresno, CA 93710 .",
       "email": "",
       "phone": "",
       "start": "2026-09-17",
@@ -503,6 +533,21 @@
       "contact": "PABLO VILLANUEVA JR",
       "email": "",
       "phone": "(559)708-3366",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471218",
+      "source": "Fresno",
+      "name": "ARBORMASTERY TRAINING",
+      "address": "221 W HERNDON AVE SPC 85",
+      "address2": "FRESNO CA 93650-1338",
+      "zip": "93650",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "SCOTT ALAN CAROTHERS",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
@@ -1493,6 +1538,21 @@
       "contact": "BRITTINI RATLIFF",
       "email": "",
       "phone": "(559)400-3316",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471228",
+      "source": "Fresno",
+      "name": "MYA'S MICRO MARKET LLC., DBA, VENDING FRESNO",
+      "address": "5313 E TRUMAN AVE",
+      "address2": "FRESNO CA 93725-0934",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "ANITA N SENGRATH",
+      "email": "",
+      "phone": "(559)231-1482",
       "start": "",
       "status": ""
     },
