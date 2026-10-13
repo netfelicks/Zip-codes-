@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T22:55:57.282Z",
+  "updated": "2026-10-13T21:13:10.803Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -11,6 +11,21 @@
   ],
   "month": "October 2026",
   "leads": [
+    {
+      "account_key": "Modesto:1315285",
+      "source": "Modesto",
+      "name": "SYNERGY BEHAVIORAL MENTAL HEALTH AND WELLNESS CARE",
+      "address": "1101 STANDIFORD AVE #C-4",
+      "address2": "MODESTO, CA 95350-0982",
+      "zip": "95350",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-13",
+      "status": ""
+    },
     {
       "account_key": "Modesto:1315255",
       "source": "Modesto",
@@ -578,6 +593,21 @@
       "contact": "JOSE CORDOVA",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471232",
+      "source": "Fresno",
+      "name": "ARZETA LABOR SERVICES",
+      "address": "4974 E TULARE AVE",
+      "address2": "FRESNO CA 93727",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "ELIZABETH ARZETA",
+      "email": "",
+      "phone": "(559)965-4424",
       "start": "",
       "status": ""
     },
