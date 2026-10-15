@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T21:13:10.803Z",
+  "updated": "2026-10-15T19:52:20.482Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -27,6 +27,21 @@
       "status": ""
     },
     {
+      "account_key": "Fresno FBN:2202610004677",
+      "source": "Fresno FBN",
+      "name": "CABINETS NEXT",
+      "address": "110 W. PONTIAC WAY SUITE 105-106",
+      "address2": "CLOVIS, CA 93612",
+      "zip": "93612",
+      "territory": "Hesham",
+      "business_type": "limited liability company",
+      "contact": "CABINETS NEXT LLC , 3761 LONGFORD WAY, CLOVIS, CA 93619",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-12",
+      "status": ""
+    },
+    {
       "account_key": "Modesto:1315255",
       "source": "Modesto",
       "name": "AESTHETICALLY YOU",
@@ -39,6 +54,21 @@
       "email": "",
       "phone": "",
       "start": "2026-10-10",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004582",
+      "source": "Fresno FBN",
+      "name": "VALLEY AI",
+      "address": "3642 TRENTON LANE",
+      "address2": "CLOVIS, CA 93619",
+      "zip": "93619",
+      "territory": "Hesham",
+      "business_type": "limited liability company",
+      "contact": "SITECMD LLC , 3642 TRENTON LANE CLOVIS CA 93619 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-05",
       "status": ""
     },
     {
@@ -717,6 +747,21 @@
       "status": ""
     },
     {
+      "account_key": "471108",
+      "source": "Fresno",
+      "name": "BOUND BY EMILY",
+      "address": "1115 E YALE AVE",
+      "address2": "FRESNO CA 93704-6238",
+      "zip": "93704",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "EMILY SMITH",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471058",
       "source": "Fresno",
       "name": "BY IRYNA",
@@ -912,21 +957,6 @@
       "status": ""
     },
     {
-      "account_key": "471108",
-      "source": "Fresno",
-      "name": "EMILY'S PERMANENT JEWELRY",
-      "address": "1115 E YALE AVE",
-      "address2": "FRESNO CA 93704-6238",
-      "zip": "93704",
-      "territory": "Felix",
-      "business_type": "",
-      "contact": "EMILY SMITH",
-      "email": "",
-      "phone": "",
-      "start": "",
-      "status": ""
-    },
-    {
       "account_key": "471077",
       "source": "Fresno",
       "name": "EN LA OLLA",
@@ -1062,6 +1092,21 @@
       "status": ""
     },
     {
+      "account_key": "471234",
+      "source": "Fresno",
+      "name": "GIL HANYMAN SERVICES",
+      "address": "4305 E LYELL AVE",
+      "address2": "FRESNO CA 93702-3642",
+      "zip": "93702",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "ERIC C GIL",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470980",
       "source": "Fresno",
       "name": "GOLDEN HEART CNA ACADEMY",
@@ -1137,6 +1182,21 @@
       "status": ""
     },
     {
+      "account_key": "471241",
+      "source": "Fresno",
+      "name": "HOE INK HENNA ON EVERYBODY",
+      "address": "2742 E ANDREWS AVE",
+      "address2": "FRESNO CA 93726-6612",
+      "zip": "93726",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "ERIKA MAYA SOOKHIRAM",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470722",
       "source": "Fresno",
       "name": "HOME SWEET CLEAN",
@@ -1163,6 +1223,21 @@
       "contact": "SANDRA CORONADO OSORIA",
       "email": "",
       "phone": "(559)373-3214",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471238",
+      "source": "Fresno",
+      "name": "I & M CLEANING SERVICES",
+      "address": "1865 N LAROSE LN",
+      "address2": "CLOVIS CA 93619-7687",
+      "zip": "93619",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MAYRA A FREYRE CASTILLO",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
@@ -1613,6 +1688,21 @@
       "contact": "NAOMI SINGH",
       "email": "",
       "phone": "(559)448-7515",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471243",
+      "source": "Fresno",
+      "name": "NATION X",
+      "address": "1665 W SHAW AVE STE 104",
+      "address2": "FRESNO CA 93711-3508",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "DAN ELIEZER MONTES",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
