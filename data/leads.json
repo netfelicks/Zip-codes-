@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-15T19:52:20.482Z",
+  "updated": "2026-10-16T19:32:43.105Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -57,6 +57,36 @@
       "status": ""
     },
     {
+      "account_key": "Modesto:1315353",
+      "source": "Modesto",
+      "name": "MARY CRUZ CENTRO DE CAPACITACION",
+      "address": "1606 CROWS LANDING RD",
+      "address2": "MODESTO, CA 95358-5607",
+      "zip": "95358",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-06",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315363",
+      "source": "Modesto",
+      "name": "CORY W GRANILLO TUTORING SERVICES",
+      "address": "426 14TH ST #116",
+      "address2": "MODESTO, CA 95354-2660",
+      "zip": "95354",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-05",
+      "status": ""
+    },
+    {
       "account_key": "Fresno FBN:2202610004582",
       "source": "Fresno FBN",
       "name": "VALLEY AI",
@@ -69,6 +99,21 @@
       "email": "",
       "phone": "",
       "start": "2026-10-05",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315318",
+      "source": "Modesto",
+      "name": "AUTO REBUILDER + DELIVERY",
+      "address": "829 5TH ST",
+      "address2": "MODESTO, CA 95351-2808",
+      "zip": "95351",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-01",
       "status": ""
     },
     {
@@ -762,6 +807,21 @@
       "status": ""
     },
     {
+      "account_key": "471245",
+      "source": "Fresno",
+      "name": "BROOM AND BLUSH CLEANING",
+      "address": "5380 E HUFFMAN AVE",
+      "address2": "FRESNO CA 93727-9321",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "LUZ ELENA GALVAN CORREA",
+      "email": "",
+      "phone": "(559)728-2396",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471058",
       "source": "Fresno",
       "name": "BY IRYNA",
@@ -773,6 +833,21 @@
       "contact": "ANYRI GUADALUPE MARTINEZ",
       "email": "",
       "phone": "(559)369-5566",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471262",
+      "source": "Fresno",
+      "name": "CARISSAXESTHETICS",
+      "address": "1616 W SHAW AVE STE B6",
+      "address2": "FRESNO CA 93711-3513",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "CARISSA MEDRANO-FELIX",
+      "email": "",
+      "phone": "(559)387-8860",
       "start": "",
       "status": ""
     },
@@ -878,6 +953,36 @@
       "contact": "JAMES ANDREW CONTRERAS",
       "email": "",
       "phone": "(559)353-1083",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471264",
+      "source": "Fresno",
+      "name": "COSMOS TRANSPORTATION",
+      "address": "1676 E DEYOUNG DR",
+      "address2": "FRESNO CA 93720-1441",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "VAHAGN TORIKYAN",
+      "email": "",
+      "phone": "(559)287-6666",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471253",
+      "source": "Fresno",
+      "name": "CREME PARIS",
+      "address": "681 E NEES AVE",
+      "address2": "FRESNO CA 93720-2106",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "KAMALPREET KAUR",
+      "email": "",
+      "phone": "(408)410-0227",
       "start": "",
       "status": ""
     },
@@ -1527,6 +1632,21 @@
       "status": ""
     },
     {
+      "account_key": "471257",
+      "source": "Fresno",
+      "name": "MANUEL'S FLOWERS MARKET",
+      "address": "3130 N FRUIT AVE",
+      "address2": "FRESNO CA 93705-4133",
+      "zip": "93705",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "MANUEL FLORES CASTILLO",
+      "email": "",
+      "phone": "(559)216-2102",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471177",
       "source": "Fresno",
       "name": "MARQUEZ MAKES",
@@ -1628,6 +1748,21 @@
       "contact": "MIGUEL RAMIREZ SILVA",
       "email": "",
       "phone": "(559)803-0858",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471259",
+      "source": "Fresno",
+      "name": "MIRROR COFFEE FRESNO",
+      "address": "1468 N VAN NESS AVE",
+      "address2": "FRESNO CA 93728-1939",
+      "zip": "93728",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "KATHRYN FRIESEN",
+      "email": "",
+      "phone": "(831)346-9594",
       "start": "",
       "status": ""
     },
@@ -2022,6 +2157,21 @@
       "status": ""
     },
     {
+      "account_key": "471266",
+      "source": "Fresno",
+      "name": "SHONDRA KING LMFT",
+      "address": "2585 E PERRIN AVE",
+      "address2": "FRESNO CA 93720-5205",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "SHONDRA KING",
+      "email": "",
+      "phone": "(559)797-6729",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "469190",
       "source": "Fresno",
       "name": "SIERRA VALLEY PHARMACY",
@@ -2198,6 +2348,21 @@
       "contact": "MUHAMMAD SHAHID",
       "email": "",
       "phone": "(559)675-9833",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471251",
+      "source": "Fresno",
+      "name": "TREASURED MEMORIES",
+      "address": "4483 N GARDEN AVE",
+      "address2": "FRESNO CA 93726-3002",
+      "zip": "93726",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "PATRICIE LOPEZ",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
