@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T19:32:43.105Z",
+  "updated": "2026-10-17T18:27:44.216Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -987,6 +987,21 @@
       "status": ""
     },
     {
+      "account_key": "471148",
+      "source": "Fresno",
+      "name": "CRM GENERAL CONSTRUCTON INC",
+      "address": "8853 ROAD 24",
+      "address2": "MADERA CA 93637-9627",
+      "zip": "93637",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "CHRISTIAN RICARDO MARTINEZ GONZALEZ",
+      "email": "",
+      "phone": "(559)903-1879",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471137",
       "source": "Fresno",
       "name": "CROSS VALLEY HAULING",
@@ -1047,6 +1062,21 @@
       "status": ""
     },
     {
+      "account_key": "471275",
+      "source": "Fresno",
+      "name": "ELEVATE STRATEGIES",
+      "address": "1041 E SHIELDS AVE STE C",
+      "address2": "FRESNO CA 93704-5051",
+      "zip": "93704",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "FRANCISCO SANCHEZ DE LA CRUZ",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471081",
       "source": "Fresno",
       "name": "ELITE LATITUDES TRAVEL",
@@ -1058,21 +1088,6 @@
       "contact": "CHRIS ORR",
       "email": "",
       "phone": "(408)710-0591",
-      "start": "",
-      "status": ""
-    },
-    {
-      "account_key": "471077",
-      "source": "Fresno",
-      "name": "EN LA OLLA",
-      "address": "153 N VAN NESS AVE",
-      "address2": "FRESNO CA 93701-1626",
-      "zip": "93701",
-      "territory": "Felix",
-      "business_type": "",
-      "contact": "CHRISTIAN SANTOYO",
-      "email": "",
-      "phone": "",
       "start": "",
       "status": ""
     },
@@ -1283,6 +1298,36 @@
       "contact": "LESTER LEE MCCURLEY",
       "email": "",
       "phone": "(559)704-4131",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471268",
+      "source": "Fresno",
+      "name": "HD SOUND",
+      "address": "3143 MATOIAN WAY APT 350",
+      "address2": "FRESNO CA 93710-6671",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "DAVID KENNEDY",
+      "email": "",
+      "phone": "(760)213-4119",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471269",
+      "source": "Fresno",
+      "name": "HD SOUND",
+      "address": "3143 MATOIAN WAY APT 350",
+      "address2": "FRESNO CA 93710-6671",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "DAVID KENNEDY",
+      "email": "",
+      "phone": "(760)213-4119",
       "start": "",
       "status": ""
     },
@@ -2078,6 +2123,21 @@
       "contact": "GABRIEL P MELTON",
       "email": "",
       "phone": "(559)916-7010",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471267",
+      "source": "Fresno",
+      "name": "ROBERT JONES AUTOMOTIVE SERVICES",
+      "address": "4579 S MAPLE AVE",
+      "address2": "FRESNO CA 93725-9358",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "ROBERT JONES",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
