@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T18:37:04.321Z",
+  "updated": "2026-10-19T21:02:02.817Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -1103,6 +1103,21 @@
       "contact": "PAMELA YOUNG",
       "email": "",
       "phone": "(559)916-1571",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471123",
+      "source": "Fresno",
+      "name": "EXIMIA",
+      "address": "2950 N FRESNO ST # 1",
+      "address2": "FRESNO CA 93703-1123",
+      "zip": "93703",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "JASMINA CARDENAS",
+      "email": "",
+      "phone": "(559)240-0857",
       "start": "",
       "status": ""
     },
@@ -2528,6 +2543,21 @@
       "contact": "ALEJANDRA ESTRADA GARCIA",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471125",
+      "source": "Fresno",
+      "name": "VICEROY IMPROVEMENT LLC DBA DABELLA",
+      "address": "6051 N FRESNO ST",
+      "address2": "FRESNO CA 93710-5280",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "DONNIE MCMILLAN JR",
+      "email": "",
+      "phone": "(503)641-7676",
       "start": "",
       "status": ""
     },
