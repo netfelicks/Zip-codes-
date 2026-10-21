@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T21:02:02.817Z",
+  "updated": "2026-10-21T20:07:06.203Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -11,6 +11,51 @@
   ],
   "month": "October 2026",
   "leads": [
+    {
+      "account_key": "Modesto:1315258",
+      "source": "Modesto",
+      "name": "CALIFORNIA CENTER FOR PAIN AND WELLNESS",
+      "address": "1541 FLORIDA AVE #306",
+      "address2": "MODESTO, CA 95350-4429",
+      "zip": "95350",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-20",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315378",
+      "source": "Modesto",
+      "name": "HOT SHOTZ MOBILE BAR AND PARTY RENTAL",
+      "address": "3717 WICHITA WAY",
+      "address2": "MODESTO, CA 95357-1568",
+      "zip": "95357",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-20",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315406",
+      "source": "Modesto",
+      "name": "STANISLAUS CART COMPANY",
+      "address": "931 10TH ST #861",
+      "address2": "MODESTO, CA 95354-2305",
+      "zip": "95354",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-13",
+      "status": ""
+    },
     {
       "account_key": "Modesto:1315285",
       "source": "Modesto",
@@ -567,6 +612,21 @@
       "status": ""
     },
     {
+      "account_key": "471280",
+      "source": "Fresno",
+      "name": "ALWAYS FADED BARBER SHOP",
+      "address": "3025 W SHAW AVE STE 105",
+      "address2": "FRESNO CA 93711-3211",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "ARTURO TORRES JR",
+      "email": "",
+      "phone": "(559)824-1721",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470807",
       "source": "Fresno",
       "name": "AM BUILDING MAINTENANCE",
@@ -653,6 +713,21 @@
       "contact": "HARKAMALJEET CHAGGER",
       "email": "",
       "phone": "(510)509-0330",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471294",
+      "source": "Fresno",
+      "name": "ARISE PEDIATRICS",
+      "address": "5412 N PALM AVE STE 101",
+      "address2": "FRESNO CA 93704-1943",
+      "zip": "93704",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "ESTHER IGBOERIKA",
+      "email": "",
+      "phone": "(907)246-6537",
       "start": "",
       "status": ""
     },
@@ -1017,6 +1092,21 @@
       "status": ""
     },
     {
+      "account_key": "471296",
+      "source": "Fresno",
+      "name": "CROWN BEAUTY SUPPLY",
+      "address": "321 FRESNO ST",
+      "address2": "FRESNO CA 93706-3612",
+      "zip": "93706",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "RACHELLE O ROSBY",
+      "email": "",
+      "phone": "(559)394-3007",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471105",
       "source": "Fresno",
       "name": "DENNIS SNIFFIN",
@@ -1133,6 +1223,21 @@
       "contact": "ALYSSA LAZARO",
       "email": "",
       "phone": "(725)261-2556",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471279",
+      "source": "Fresno",
+      "name": "FIRME AI",
+      "address": "318 E GARRETT AVE",
+      "address2": "FRESNO CA 93706-4833",
+      "zip": "93706",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "FIRME AI CORPORATION",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
@@ -1482,6 +1587,21 @@
       "status": ""
     },
     {
+      "account_key": "471291",
+      "source": "Fresno",
+      "name": "JC GARDENING AND PROPERTY MAINTENANCE",
+      "address": "1248 N 11TH ST APT 109",
+      "address2": "FRESNO CA 93703-4259",
+      "zip": "93703",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "JUAN CHAVEZ",
+      "email": "",
+      "phone": "(559)699-0404",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471037",
       "source": "Fresno",
       "name": "JOSSY'S HOUSEKEEPING",
@@ -1722,6 +1842,36 @@
       "status": ""
     },
     {
+      "account_key": "471276",
+      "source": "Fresno",
+      "name": "MARTINEZ SEGURA LLC",
+      "address": "4062 DUNCAN AVE",
+      "address2": "CLOVIS CA 93619-5242",
+      "zip": "93619",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MARTINEZ SEGURA LLC",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471286",
+      "source": "Fresno",
+      "name": "MARY MOBILE NOTARY",
+      "address": "5523 E FLORENCE AVE",
+      "address2": "FRESNO CA 93727-6332",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MARY SOPHY IN",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471029",
       "source": "Fresno",
       "name": "MARZ PROFESSONAL CLEANING SERVICE",
@@ -1808,6 +1958,21 @@
       "contact": "MIGUEL RAMIREZ SILVA",
       "email": "",
       "phone": "(559)803-0858",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471277",
+      "source": "Fresno",
+      "name": "MIRANDA'S FENCES",
+      "address": "213 S KONA AVE",
+      "address2": "FRESNO CA 93727-3481",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "CARLOS MIRANDA",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
@@ -1977,6 +2142,21 @@
       "status": ""
     },
     {
+      "account_key": "471299",
+      "source": "Fresno",
+      "name": "OSIANA'S FRESH START CLEANING SERVICES",
+      "address": "2488 10TH ST APT 117",
+      "address2": "SANGER CA 93657-2948",
+      "zip": "93657",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "OCEANA MARTINEZ",
+      "email": "",
+      "phone": "(559)365-5684",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471117",
       "source": "Fresno",
       "name": "OTTER B POOL SERVICE",
@@ -2052,6 +2232,21 @@
       "status": ""
     },
     {
+      "account_key": "470964",
+      "source": "Fresno",
+      "name": "PHILLIPS BBQ COMPANY",
+      "address": "1564 W MINARETS AVE",
+      "address2": "FRESNO CA 93711-0519",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "IVAN PHILLIPS",
+      "email": "",
+      "phone": "(559)288-8897",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471138",
       "source": "Fresno",
       "name": "PRIMERAMENTE DIOS",
@@ -2082,6 +2277,21 @@
       "status": ""
     },
     {
+      "account_key": "471283",
+      "source": "Fresno",
+      "name": "PURE TOUCH CLEANING",
+      "address": "3328 N MARKS AVE APT 126",
+      "address2": "FRESNO CA 93722-4959",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "CORSHENA MCCLENDON",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470939",
       "source": "Fresno",
       "name": "QUALITY FLEETS",
@@ -2093,6 +2303,21 @@
       "contact": "GURPINDER SINGH",
       "email": "",
       "phone": "(559)259-0519",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471260",
+      "source": "Fresno",
+      "name": "R15DESIGNS",
+      "address": "2522 N BRUNSWICK AVE",
+      "address2": "FRESNO CA 93722-5186",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "RYAN MONTOYA",
+      "email": "",
+      "phone": "(559)288-3863",
       "start": "",
       "status": ""
     },
@@ -2123,6 +2348,21 @@
       "contact": "RESILIENCE INDEPENDENT LIVING LLC",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471297",
+      "source": "Fresno",
+      "name": "RIVAS TURBO REBUILD LLC",
+      "address": "2624 E OLIVE AVE",
+      "address2": "FRESNO CA 93701-1218",
+      "zip": "93701",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "JOSE RIVAS TORRES",
+      "email": "",
+      "phone": "(559)334-4520",
       "start": "",
       "status": ""
     },
