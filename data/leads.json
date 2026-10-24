@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23T19:56:44.941Z",
+  "updated": "2026-10-24T18:46:20.327Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -777,6 +777,21 @@
       "status": ""
     },
     {
+      "account_key": "471322",
+      "source": "Fresno",
+      "name": "ANOTHER POOL SERVICE",
+      "address": "1522 E SAMPLE AVE",
+      "address2": "FRESNO CA 93710-5715",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MANUEL MARGAIN",
+      "email": "",
+      "phone": "(559)307-1072",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "468563",
       "source": "Fresno",
       "name": "APPLIANCE MD",
@@ -897,6 +912,21 @@
       "status": ""
     },
     {
+      "account_key": "471318",
+      "source": "Fresno",
+      "name": "BCM MAINTENANCE",
+      "address": "2475 YERBA ST",
+      "address2": "SELMA CA 93662-3938",
+      "zip": "93662",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "JUAN CARLOS GUTIERREZ MARTINEZ",
+      "email": "",
+      "phone": "(559)570-9576",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470967",
       "source": "Fresno",
       "name": "BIENESTAR 360",
@@ -983,6 +1013,21 @@
       "contact": "EMILY SMITH",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471324",
+      "source": "Fresno",
+      "name": "BROKEN EYE VISION",
+      "address": "2036 N FARRIS AVE",
+      "address2": "FRESNO CA 93704-5913",
+      "zip": "93704",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "MEGAN ELIZABETH",
+      "email": "",
+      "phone": "(559)859-7484",
       "start": "",
       "status": ""
     },
@@ -1793,6 +1838,21 @@
       "contact": "ASHLEY NICOLE SOUZA",
       "email": "",
       "phone": "(559)970-9832",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471317",
+      "source": "Fresno",
+      "name": "JWIRELESS ENVIOS DE DINERO",
+      "address": "1405 W SHIELDS AVE",
+      "address2": "FRESNO CA 93705-3343",
+      "zip": "93705",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "WILFREDO RODRIGUEZ",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
@@ -3023,6 +3083,21 @@
       "contact": "YAHIA MURSHED",
       "email": "",
       "phone": "(559)473-7379",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471319",
+      "source": "Fresno",
+      "name": "YOUNG MNDS MATTER",
+      "address": "803 N FILBERT AVE",
+      "address2": "FRESNO CA 93727-4171",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "RUDY A SILVA",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     }
