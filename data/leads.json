@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24T18:46:20.327Z",
+  "updated": "2026-10-25T19:00:28.874Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -7,7 +7,8 @@
     "Modesto": "https://bizmod.modestogov.com/Search/Index/BusinessLicense"
   },
   "warnings": [
-    "Clovis import skipped: Clovis returned HTTP 403"
+    "Clovis import skipped: Clovis returned HTTP 403",
+    "Modesto import skipped: fetch failed"
   ],
   "month": "October 2026",
   "leads": [
