@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T19:00:28.874Z",
+  "updated": "2026-10-26T21:00:00.551Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -7,8 +7,7 @@
     "Modesto": "https://bizmod.modestogov.com/Search/Index/BusinessLicense"
   },
   "warnings": [
-    "Clovis import skipped: Clovis returned HTTP 403",
-    "Modesto import skipped: fetch failed"
+    "Clovis import skipped: Clovis returned HTTP 403"
   ],
   "month": "October 2026",
   "leads": [
@@ -85,6 +84,21 @@
       "email": "",
       "phone": "",
       "start": "2026-10-20",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315399",
+      "source": "Modesto",
+      "name": "FRIES AND FRIED MODESTO",
+      "address": "201 MAZE BLVD",
+      "address2": "MODESTO, CA 95351-2646",
+      "zip": "95351",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-19",
       "status": ""
     },
     {
@@ -445,6 +459,21 @@
       "email": "",
       "phone": "",
       "start": "2026-09-29",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004360",
+      "source": "Fresno FBN",
+      "name": "EVERSHINE URGENT CARE DENTAL GROUP",
+      "address": "5731 N. FRESNO ST SUITE 103",
+      "address2": "FRESNO, CA 93710",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "a corporation",
+      "contact": "NAMALA DENTAL GROUP OF FRESNO INCORPORATION , 3385 G ST   SUITE B MERCED CA 95340 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-21",
       "status": ""
     },
     {
@@ -1213,6 +1242,21 @@
       "status": ""
     },
     {
+      "account_key": "471332",
+      "source": "Fresno",
+      "name": "CREATIVES STUDIO",
+      "address": "2805 N BLACKSTONE AVE",
+      "address2": "FRESNO CA 93703-1001",
+      "zip": "93703",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "HANNAH CHAVEZ",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471253",
       "source": "Fresno",
       "name": "CREME PARIS",
@@ -1552,6 +1596,21 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "JUAN DANIEL ESPINOZA",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471329",
+      "source": "Fresno",
+      "name": "GUZMAN'S BARBERSHOP/PELUQUERIA",
+      "address": "501 N VAN NESS AVE STE 105",
+      "address2": "FRESNO CA 93728-3419",
+      "zip": "93728",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "BRIAN GUZMAN",
       "email": "",
       "phone": "",
       "start": "",
@@ -2113,6 +2172,21 @@
       "status": ""
     },
     {
+      "account_key": "471331",
+      "source": "Fresno",
+      "name": "MEDICAL INTERPRETER",
+      "address": "4451 W AVALON AVE APT 101",
+      "address2": "FRESNO CA 93722-6235",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "KIMBERLY CAMPANILE",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471141",
       "source": "Fresno",
       "name": "MI RANCHITOS FURNITURE AND MORE",
@@ -2259,6 +2333,21 @@
       "contact": "DAN ELIEZER MONTES",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471338",
+      "source": "Fresno",
+      "name": "NICKS CATERING",
+      "address": "764 E MICHIGAN AVE",
+      "address2": "FRESNO CA 93704-5525",
+      "zip": "93704",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "DOREEN YEPEZ",
+      "email": "",
+      "phone": "(559)217-9230",
       "start": "",
       "status": ""
     },
@@ -3067,6 +3156,21 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "VTP MOTORSPORTS LLC",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471336",
+      "source": "Fresno",
+      "name": "WORKHARD PLAY SMART DAVID SILVA",
+      "address": "921 N PEACH AVE APT 145",
+      "address2": "FRESNO CA 93727-2494",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "DAVID SILVA",
       "email": "",
       "phone": "",
       "start": "",
