@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T20:40:18.851Z",
+  "updated": "2026-10-28T21:01:29.127Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -12,6 +12,21 @@
   "month": "October 2026",
   "leads": [
     {
+      "account_key": "Modesto:1315301",
+      "source": "Modesto",
+      "name": "DADS DIECAST & COLLECTIBLES",
+      "address": "2519 COFFEE RD #104",
+      "address2": "MODESTO, CA 95355-2056",
+      "zip": "95355",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-28",
+      "status": ""
+    },
+    {
       "account_key": "Modesto:1315388",
       "source": "Modesto",
       "name": "BIG BEAR CAR WASH",
@@ -21,6 +36,21 @@
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-23",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004876",
+      "source": "Fresno FBN",
+      "name": "KALORA RESTAURANT",
+      "address": "978 E LEXINGTON AVE",
+      "address2": "FRESNO, CA 93720",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "limited liability company",
+      "contact": "7TH PLANET SERVICES LLC , 978 E LEXINGTON AVE FRESNO CA 93720 .",
       "email": "",
       "phone": "",
       "start": "2026-10-23",
@@ -93,6 +123,21 @@
       "address": "201 MAZE BLVD",
       "address2": "MODESTO, CA 95351-2646",
       "zip": "95351",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-19",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315432",
+      "source": "Modesto",
+      "name": "KOKOZ CITE CUTZ @ JOLIE PET SPA",
+      "address": "3520 OAKDALE RD #C",
+      "address2": "MODESTO, CA 95357-0714",
+      "zip": "95357",
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
