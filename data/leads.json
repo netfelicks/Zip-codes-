@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T21:01:29.127Z",
+  "updated": "2026-10-29T21:05:37.829Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -24,6 +24,21 @@
       "email": "",
       "phone": "",
       "start": "2026-10-28",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315456",
+      "source": "Modesto",
+      "name": "GROOMING BY KACY @ A BATH & BISCUIT",
+      "address": "2101 SYLVAN AVE #101",
+      "address2": "MODESTO, CA 95355-1632",
+      "zip": "95355",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-26",
       "status": ""
     },
     {
@@ -108,6 +123,21 @@
       "address": "3717 WICHITA WAY",
       "address2": "MODESTO, CA 95357-1568",
       "zip": "95357",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-20",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315437",
+      "source": "Modesto",
+      "name": "SUPER LIQUOR",
+      "address": "1600 TULLY RD # A",
+      "address2": "MODESTO, CA 95350-4065",
+      "zip": "95350",
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
@@ -792,6 +822,21 @@
       "status": ""
     },
     {
+      "account_key": "471365",
+      "source": "Fresno",
+      "name": "ADVANCED JOINT PAIN & VASCULAR CENTER",
+      "address": "7206 N MILBURN AVE STE 103",
+      "address2": "FRESNO CA 93722-8450",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "SILVER SUMMIT MEDICAL CORPORATION",
+      "email": "",
+      "phone": "(661)324-4100",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471280",
       "source": "Fresno",
       "name": "ALWAYS FADED BARBER SHOP",
@@ -1163,6 +1208,21 @@
       "contact": "CARLOS E GAVIRIA AND ALICIA GUZMAN",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471350",
+      "source": "Fresno",
+      "name": "CEMITAS POBLANOS EL PATRON",
+      "address": "2017 N WINERY AVE APT 208",
+      "address2": "FRESNO CA 93703-2868",
+      "zip": "93703",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MABEL VILLEGAS CALIX",
+      "email": "",
+      "phone": "(323)243-4224",
       "start": "",
       "status": ""
     },
@@ -1752,6 +1812,21 @@
       "status": ""
     },
     {
+      "account_key": "471351",
+      "source": "Fresno",
+      "name": "HOOKAH LOVERS LLC",
+      "address": "6421 N BLACKSTONE AVE",
+      "address2": "FRESNO CA 93710-3508",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "AMANDEEP SINGH",
+      "email": "",
+      "phone": "(559)801-5790",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471145",
       "source": "Fresno",
       "name": "HS HOME SERVICES",
@@ -1868,6 +1943,36 @@
       "contact": "JUAN CHAVEZ",
       "email": "",
       "phone": "(559)699-0404",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471356",
+      "source": "Fresno",
+      "name": "JESSIE BEAR HUG",
+      "address": "4623 W JACQUELYN AVE",
+      "address2": "FRESNO CA 93722-6413",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "JESSICA HONNEN",
+      "email": "",
+      "phone": "(559)276-8564",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471347",
+      "source": "Fresno",
+      "name": "JOE'S REMODELING",
+      "address": "3524 W ROYAL OAKS DR",
+      "address2": "VISALIA CA 93277-4178",
+      "zip": "93277",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "JOE CARDENAS",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
@@ -2577,6 +2682,21 @@
       "status": ""
     },
     {
+      "account_key": "471354",
+      "source": "Fresno",
+      "name": "PRESSURE WASHER GUY",
+      "address": "3182 N STAR LN #83",
+      "address2": "FRESNO CA 93722",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "CESAR MARTINEZ GRACIDA",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471138",
       "source": "Fresno",
       "name": "PRIMERAMENTE DIOS",
@@ -2783,6 +2903,21 @@
       "contact": "ROBERT JONES",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471362",
+      "source": "Fresno",
+      "name": "ROSALINDA'S PHONE ACCESSORIES AND MORE",
+      "address": "3888 N WOODSON AVE",
+      "address2": "FRESNO CA 93705-2248",
+      "zip": "93705",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "ROSALINDA CHAVEZ",
+      "email": "",
+      "phone": "(559)508-9990",
       "start": "",
       "status": ""
     },
@@ -3209,7 +3344,7 @@
     {
       "account_key": "471336",
       "source": "Fresno",
-      "name": "WORKHARD PLAY SMART DAVID SILVA",
+      "name": "WORK HARD PLAY SMART DAVID SILVA",
       "address": "921 N PEACH AVE APT 145",
       "address2": "FRESNO CA 93727-2494",
       "zip": "93727",
