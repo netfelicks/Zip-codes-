@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30T20:43:57.289Z",
+  "updated": "2026-10-31T19:57:23.049Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -1992,6 +1992,21 @@
       "status": ""
     },
     {
+      "account_key": "471255",
+      "source": "Fresno",
+      "name": "JOHN T STARKEL",
+      "address": "7311 N 1ST ST",
+      "address2": "FRESNO CA 93720-2926",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "JOHN T STARKEL",
+      "email": "",
+      "phone": "(559)225-0622",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471037",
       "source": "Fresno",
       "name": "JOSSY'S HOUSEKEEPING",
@@ -3066,6 +3081,21 @@
       "territory": "Hesham",
       "business_type": "",
       "contact": "ROBERT MARTINEZ",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471379",
+      "source": "Fresno",
+      "name": "SUAREZ AUTO SALES",
+      "address": "1515 N MAPLE AVE",
+      "address2": "FRESNO CA 93703-4403",
+      "zip": "93703",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "SUAREZ 559 CUSTOMS LLC",
       "email": "",
       "phone": "",
       "start": "",
