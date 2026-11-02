@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T20:28:31.480Z",
+  "updated": "2026-11-02T23:28:47.577Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -11,6 +11,21 @@
   ],
   "month": "November 2026",
   "leads": [
+    {
+      "account_key": "Modesto:1315442",
+      "source": "Modesto",
+      "name": "COFFEE ROAD VET",
+      "address": "2717 COFFEE RD #H",
+      "address2": "MODESTO, CA 95355-1750",
+      "zip": "95355",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-11-02",
+      "status": ""
+    },
     {
       "account_key": "Modesto:1315302",
       "source": "Modesto",
@@ -69,6 +84,66 @@
       "email": "",
       "phone": "",
       "start": "2026-11-01",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004692",
+      "source": "Fresno FBN",
+      "name": "Advanced Joint Pain & Vascular Center",
+      "address": "7206 N. Milburn Ave",
+      "address2": "Suite 103, Fresno, CA 93722",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "a corporation",
+      "contact": "Silver Summit Medic al Corporation, 1400 Easton Dr., Suite 106, Bakersfield, CA 93309 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-13",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004502",
+      "source": "Fresno FBN",
+      "name": "Specialty Herd Solutions",
+      "address": "4672 E. Drummond Ave.",
+      "address2": "Fresno, CA 93725",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "limited liability company",
+      "contact": "Specialty Sales, LLC, 7621 N. Del Mar Ave., Ste. 101 Fresno CA 93725.",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-29",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004360",
+      "source": "Fresno FBN",
+      "name": "EVERSHINE URGENT CARE DENTAL GROUP",
+      "address": "5731 N. FRESNO ST SUITE 103",
+      "address2": "FRESNO, CA 93710",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "a corporation",
+      "contact": "NAMALA DENTAL GROUP OF FRESNO INCORPORATION , 3385 G ST   SUITE B MERCED CA 95340 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-21",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004299",
+      "source": "Fresno FBN",
+      "name": "Lowe Audiology",
+      "address": "6101 N. Fresno Street",
+      "address2": "Suite 102 Fresno, CA 93710",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "an individual",
+      "contact": "Lowe Audiology Corporation, 6101 N. Fresno Street, Suite 102 Fresno, CA 93710 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-17",
       "status": ""
     },
     {
