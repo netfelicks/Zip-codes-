@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T23:28:47.577Z",
+  "updated": "2026-11-03T21:45:01.513Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -144,6 +144,21 @@
       "email": "",
       "phone": "",
       "start": "2026-09-17",
+      "status": ""
+    },
+    {
+      "account_key": "471384",
+      "source": "Fresno",
+      "name": "AMBERLICIOUS DELICIOUS DELIGHTS",
+      "address": "2581 E CENTRAL AVE SPC 71",
+      "address2": "FRESNO CA 93725-2429",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "ANBER ANDREWS",
+      "email": "",
+      "phone": "",
+      "start": "",
       "status": ""
     },
     {
@@ -387,6 +402,21 @@
       "status": ""
     },
     {
+      "account_key": "471388",
+      "source": "Fresno",
+      "name": "MARCO INDUSTRIAL CLEANING SUPPLIES",
+      "address": "5889 E CLINTON AVE",
+      "address2": "FRESNO CA 93727-1355",
+      "zip": "93727",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MARCO INDUSTRIAL CLEANING SUPPLIES",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471093",
       "source": "Fresno",
       "name": "NEW LEAF CURB APPEAL",
@@ -428,6 +458,21 @@
       "contact": "EZEQUIEL RODRIGUEZ JR",
       "email": "",
       "phone": "(559)705-4030",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471389",
+      "source": "Fresno",
+      "name": "ROMERO MOTIVATION",
+      "address": "1525 N WISHON AVE",
+      "address2": "FRESNO CA 93728-1826",
+      "zip": "93728",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "PETE ESTRATA ROMERO",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
