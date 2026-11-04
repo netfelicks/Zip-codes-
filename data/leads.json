@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T21:45:01.513Z",
+  "updated": "2026-11-04T21:56:35.534Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -267,6 +267,21 @@
       "status": ""
     },
     {
+      "account_key": "471403",
+      "source": "Fresno",
+      "name": "DIAMOND SPA",
+      "address": "407 E OLIVE AVE",
+      "address2": "FRESNO CA 93728-3133",
+      "zip": "93728",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "SHENGJI LI",
+      "email": "",
+      "phone": "(559)288-6445",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "469515",
       "source": "Fresno",
       "name": "EASTSIDE BARBERSHOP",
@@ -402,6 +417,21 @@
       "status": ""
     },
     {
+      "account_key": "471411",
+      "source": "Fresno",
+      "name": "LOS DORADOS",
+      "address": "1639 S ORANGE AVE",
+      "address2": "FRESNO CA 93702-4254",
+      "zip": "93702",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "JAIME RAMOS",
+      "email": "",
+      "phone": "(559)215-2676",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471388",
       "source": "Fresno",
       "name": "MARCO INDUSTRIAL CLEANING SUPPLIES",
@@ -477,6 +507,21 @@
       "status": ""
     },
     {
+      "account_key": "471404",
+      "source": "Fresno",
+      "name": "THE DOG SHACK",
+      "address": "6780 W HERNDON AVE",
+      "address2": "FRESNO CA 93722-9355",
+      "zip": "93722",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MANUEL OLMOS JR",
+      "email": "",
+      "phone": "(559)860-9010",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471282",
       "source": "Fresno",
       "name": "THE TWINS SOBER LIVING LLC",
@@ -503,6 +548,21 @@
       "contact": "TERI MATTHEWS",
       "email": "",
       "phone": "(559)392-9914",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471409",
+      "source": "Fresno",
+      "name": "XJD SOLAR PANEL AND GUTTER CLEANING",
+      "address": "4575 E CLAY AVE",
+      "address2": "FRESNO CA 93702-1531",
+      "zip": "93702",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "EDGAR ENRIQUE VAZQUEZ FERNANDEZ",
+      "email": "",
+      "phone": "(559)885-4584",
       "start": "",
       "status": ""
     }
