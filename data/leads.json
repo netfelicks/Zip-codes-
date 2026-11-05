@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T21:56:35.534Z",
+  "updated": "2026-11-05T21:58:33.766Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -87,6 +87,21 @@
       "status": ""
     },
     {
+      "account_key": "Fresno FBN:2202610004876",
+      "source": "Fresno FBN",
+      "name": "KALORA RESTAURANT",
+      "address": "978 E LEXINGTON AVE",
+      "address2": "FRESNO, CA 93720",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "limited liability company",
+      "contact": "7TH PLANET SERVICES LLC , 978 E LEXINGTON AVE FRESNO CA 93720 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-23",
+      "status": ""
+    },
+    {
       "account_key": "Fresno FBN:2202610004692",
       "source": "Fresno FBN",
       "name": "Advanced Joint Pain & Vascular Center",
@@ -99,6 +114,36 @@
       "email": "",
       "phone": "",
       "start": "2026-10-13",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004677",
+      "source": "Fresno FBN",
+      "name": "CABINETS NEXT",
+      "address": "110 W. PONTIAC WAY SUITE 105-106",
+      "address2": "CLOVIS, CA 93612",
+      "zip": "93612",
+      "territory": "Hesham",
+      "business_type": "limited liability company",
+      "contact": "CABINETS NEXT LLC , 3761 LONGFORD WAY, CLOVIS, CA 93619",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-12",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004582",
+      "source": "Fresno FBN",
+      "name": "VALLEY AI",
+      "address": "3642 TRENTON LANE",
+      "address2": "CLOVIS, CA 93619",
+      "zip": "93619",
+      "territory": "Hesham",
+      "business_type": "limited liability company",
+      "contact": "SITECMD LLC , 3642 TRENTON LANE CLOVIS CA 93619 .",
+      "email": "",
+      "phone": "",
+      "start": "2026-10-05",
       "status": ""
     },
     {
@@ -207,6 +252,36 @@
       "status": ""
     },
     {
+      "account_key": "471435",
+      "source": "Fresno",
+      "name": "CALI NALCHAJIAN",
+      "address": "7020 N WEST AVE",
+      "address2": "FRESNO CA 93711-0462",
+      "zip": "93711",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "CALI NALCHAJIAN",
+      "email": "",
+      "phone": "(559)348-7076",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471432",
+      "source": "Fresno",
+      "name": "CASILLAS CUTS",
+      "address": "3028 E BELMONT AVE",
+      "address2": "FRESNO CA 93701-2554",
+      "zip": "93701",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "DESTINEE CASILLAS",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "470781",
       "source": "Fresno",
       "name": "CASTILLO BANQUET HALL",
@@ -263,6 +338,21 @@
       "contact": "COMMUNITY HEALTH CENTERS OF AMERICA",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471429",
+      "source": "Fresno",
+      "name": "DELGADO ACCESSORIES",
+      "address": "3888 N WOODSON AVE",
+      "address2": "FRESNO CA 93705-2248",
+      "zip": "93705",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "KAYSIE DELGADO",
+      "email": "",
+      "phone": "(559)567-8843",
       "start": "",
       "status": ""
     },
@@ -462,6 +552,36 @@
       "status": ""
     },
     {
+      "account_key": "471394",
+      "source": "Fresno",
+      "name": "O'REILLY AUTO ENTERPRISES, LLC   DBA: O'REILLY AUTO PARTS #6962",
+      "address": "4673 E JENSEN AVE",
+      "address2": "FRESNO CA 93725",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "CHRISTIE MEADORS",
+      "email": "",
+      "phone": "(417)862-2674",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471396",
+      "source": "Fresno",
+      "name": "O'REILLY AUTO ENTERPRISES, LLC   DBA: O'REILLY AUTO PARTS #6962",
+      "address": "4673 E JENSEN AVE",
+      "address2": "FRESNO CA 93725",
+      "zip": "93725",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "CHRISTIE MEADORS",
+      "email": "",
+      "phone": "(417)862-2674",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471227",
       "source": "Fresno",
       "name": "ORTEGA RESTURANT AND TACOS",
@@ -473,6 +593,21 @@
       "contact": "MA. GUADALUPE ROBLES RUELAS",
       "email": "",
       "phone": "(559)356-7530",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471427",
+      "source": "Fresno",
+      "name": "QUINTERO'S CLEANING",
+      "address": "3905 N RICEWOOD AVE",
+      "address2": "FRESNO CA 93705-2245",
+      "zip": "93705",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "MARIA QUINTERO",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
