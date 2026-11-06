@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05T21:58:33.766Z",
+  "updated": "2026-11-06T21:28:16.425Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -18,6 +18,21 @@
       "address": "2717 COFFEE RD #H",
       "address2": "MODESTO, CA 95355-1750",
       "zip": "95355",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-11-02",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315485",
+      "source": "Modesto",
+      "name": "GLAMMYBYYAMI @ ANNEX HAIR STUDIO",
+      "address": "1525 J ST",
+      "address2": "MODESTO, CA 95354-1125",
+      "zip": "95354",
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
@@ -48,6 +63,21 @@
       "address": "1050 N CARPENTER RD #A1",
       "address2": "MODESTO, CA 95351-1167",
       "zip": "95351",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-11-01",
+      "status": ""
+    },
+    {
+      "account_key": "Modesto:1315471",
+      "source": "Modesto",
+      "name": "MY MAILBOX",
+      "address": "1320 STANDIFORD AVE #4",
+      "address2": "MODESTO, CA 95350-0726",
+      "zip": "95350",
       "territory": "Johnny",
       "business_type": "",
       "contact": "",
@@ -174,6 +204,21 @@
       "email": "",
       "phone": "",
       "start": "2026-09-21",
+      "status": ""
+    },
+    {
+      "account_key": "Fresno FBN:2202610004303",
+      "source": "Fresno FBN",
+      "name": "ANTHONY'S PLUMBING",
+      "address": "4457 N. MADELYN",
+      "address2": "FRESNO, CA 93723",
+      "zip": "93723",
+      "territory": "Felix",
+      "business_type": "an individual",
+      "contact": "ANTHONY DOMINGO ESTRAD A, 4457 N. MADELYN FRESNO CA 93723.",
+      "email": "",
+      "phone": "",
+      "start": "2026-09-18",
       "status": ""
     },
     {
@@ -612,6 +657,21 @@
       "status": ""
     },
     {
+      "account_key": "471442",
+      "source": "Fresno",
+      "name": "RAINBOW@SPA",
+      "address": "703 N FULTON ST STE 101",
+      "address2": "FRESNO CA 93728-3405",
+      "zip": "93728",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "DIANQUI ZHANG",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "469553",
       "source": "Fresno",
       "name": "RODRIGUEZ TRANSPORTATION",
@@ -668,6 +728,21 @@
       "contact": "PATRICIA FLORES",
       "email": "",
       "phone": "(559)376-8811",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471439",
+      "source": "Fresno",
+      "name": "TWELVE 2 CONSULTING",
+      "address": "6294 N 10TH ST",
+      "address2": "FRESNO CA 93710-5726",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "ALEJANDRA RAMOS",
+      "email": "",
+      "phone": "(559)786-7579",
       "start": "",
       "status": ""
     },
