@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T20:27:07.749Z",
+  "updated": "2026-11-10T00:14:00.231Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -383,6 +383,21 @@
       "contact": "COMMUNITY HEALTH CENTERS OF AMERICA",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471453",
+      "source": "Fresno",
+      "name": "CUONGS NGUYEN DESIGNS LLC",
+      "address": "1118 N 1ST ST",
+      "address2": "FRESNO CA 93702-1026",
+      "zip": "93702",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "CUONG NGUYEN",
+      "email": "",
+      "phone": "(559)878-8717",
       "start": "",
       "status": ""
     },
