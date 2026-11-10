@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T00:14:00.231Z",
+  "updated": "2026-11-10T21:48:00.727Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -597,6 +597,21 @@
       "status": ""
     },
     {
+      "account_key": "471463",
+      "source": "Fresno",
+      "name": "MIGUELS MOBILE REPAIR",
+      "address": "512 I ST APT C",
+      "address2": "SANGER CA 93657-2633",
+      "zip": "93657",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "MIGUEL SANCHEZ",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471093",
       "source": "Fresno",
       "name": "NEW LEAF CURB APPEAL",
@@ -683,6 +698,21 @@
       "contact": "DIANQUI ZHANG",
       "email": "",
       "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471462",
+      "source": "Fresno",
+      "name": "REJOICE BY DESIGN",
+      "address": "2231 E HOLLAND AVE",
+      "address2": "FRESNO CA 93726-2123",
+      "zip": "93726",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "JAMIE GARLAND",
+      "email": "",
+      "phone": "(559)374-8133",
       "start": "",
       "status": ""
     },
