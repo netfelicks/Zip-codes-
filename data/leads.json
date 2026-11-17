@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T20:41:14.063Z",
+  "updated": "2026-11-17T00:13:46.691Z",
   "sources": {
     "Fresno": "https://appdev.fresno.gov/finance/businessdirectory-v2/index.php?view=new",
     "Fresno FBN": "https://thebusinessjournal.com/public-notices/",
@@ -11,6 +11,21 @@
   ],
   "month": "November 2026",
   "leads": [
+    {
+      "account_key": "Modesto:1315505",
+      "source": "Modesto",
+      "name": "LUXE PET COTTAGE",
+      "address": "1550 MCHENRY AVE #1",
+      "address2": "MODESTO, CA 95350-4542",
+      "zip": "95350",
+      "territory": "Johnny",
+      "business_type": "",
+      "contact": "",
+      "email": "",
+      "phone": "",
+      "start": "2026-11-16",
+      "status": ""
+    },
     {
       "account_key": "Modesto:1315507",
       "source": "Modesto",
@@ -477,6 +492,21 @@
       "status": ""
     },
     {
+      "account_key": "471486",
+      "source": "Fresno",
+      "name": "CONTINUUM PARTS & DESIGN LLC",
+      "address": "1612 E FALLBROOK AVE",
+      "address2": "FRESNO CA 93720-2758",
+      "zip": "93720",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "DAVID WAYNE SIEPERDA",
+      "email": "",
+      "phone": "(541)602-5124",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471453",
       "source": "Fresno",
       "name": "CUONGS NGUYEN DESIGNS LLC",
@@ -522,6 +552,21 @@
       "status": ""
     },
     {
+      "account_key": "471510",
+      "source": "Fresno",
+      "name": "DREAM TCGC",
+      "address": "6676 N BARTON AVE",
+      "address2": "FRESNO CA 93710-4604",
+      "zip": "93710",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "BRANDON BAYLEY FREITAS",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "469515",
       "source": "Fresno",
       "name": "EASTSIDE BARBERSHOP",
@@ -548,6 +593,21 @@
       "contact": "MELISSA PADILLA",
       "email": "",
       "phone": "(559)317-3079",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471516",
+      "source": "Fresno",
+      "name": "GOLD CONNECTION GEORGE",
+      "address": "44 W HERNDON AVE STE 101",
+      "address2": "FRESNO CA 93650-1372",
+      "zip": "93650",
+      "territory": "Hesham",
+      "business_type": "",
+      "contact": "GEORGE MARKARIAN",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
@@ -732,6 +792,36 @@
       "status": ""
     },
     {
+      "account_key": "471515",
+      "source": "Fresno",
+      "name": "MATIU'S HANDYMAN",
+      "address": "3727 S UNIVERSITY ST",
+      "address2": "VISALIA CA 93277-5020",
+      "zip": "93277",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "MATIU MOISES BONILLA LOPEZ",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471511",
+      "source": "Fresno",
+      "name": "MI CASITA TAQUERIA",
+      "address": "3785 N PALM AVE",
+      "address2": "FRESNO CA 93704-4728",
+      "zip": "93704",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "MI CASITA TAQUERIA",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471463",
       "source": "Fresno",
       "name": "MIGUELS MOBILE REPAIR",
@@ -882,6 +972,21 @@
       "status": ""
     },
     {
+      "account_key": "471512",
+      "source": "Fresno",
+      "name": "REINA DEL BRILLO CLEANING SERVICES",
+      "address": "190 SORENSEN AVE",
+      "address2": "MENDOTA CA 93640-2023",
+      "zip": "93640",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "WENDY A CALLEJAS",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
       "account_key": "471462",
       "source": "Fresno",
       "name": "REJOICE BY DESIGN",
@@ -921,6 +1026,21 @@
       "territory": "Felix",
       "business_type": "",
       "contact": "PETE ESTRATA ROMERO",
+      "email": "",
+      "phone": "",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471513",
+      "source": "Fresno",
+      "name": "SNAIR BEAR CAR CARE",
+      "address": "2927 N PLEASANT AVE",
+      "address2": "FRESNO CA 93705-3615",
+      "zip": "93705",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "ORENTHAL PHELPS",
       "email": "",
       "phone": "",
       "start": "",
@@ -968,6 +1088,21 @@
       "contact": "MANUEL OLMOS JR",
       "email": "",
       "phone": "(559)860-9010",
+      "start": "",
+      "status": ""
+    },
+    {
+      "account_key": "471514",
+      "source": "Fresno",
+      "name": "THE HIGH TOWER DISTRICT",
+      "address": "721 E LA SIERRA DR",
+      "address2": "FRESNO CA 93728-3328",
+      "zip": "93728",
+      "territory": "Felix",
+      "business_type": "",
+      "contact": "AARON MICHAEL HIGHTOWER",
+      "email": "",
+      "phone": "",
       "start": "",
       "status": ""
     },
